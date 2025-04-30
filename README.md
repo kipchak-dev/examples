@@ -69,40 +69,6 @@ Additional libraries and clients are available as part of *Enterprise Support*. 
 * **RBAC Management**
 * **Personal Access Token Management**
 
-## Understanding Config
-The Kipchak framework uses configuration files located in the `api/config` folder to manage various aspects of your API. Here's a breakdown of the key configuration files and their purposes:
-
-### kipchak.api.php
-This file controls session handling configuration for Backend for Frontend (BFF) applications:
-- Generic API config to inject into your code
-
-### kipchak.sessions.php
-This file controls session handling configuration for Backend for Frontend (BFF) applications:
-- Choose between CouchDB or Memcached as session storage
-- Configure session database name (for CouchDB)
-- Set session timeout and other parameters
-
-### kipchak.doctrine.php
-Manages database connections:
-- CouchDB connection settings (host, port, credentials)
-- MySQL/MariaDB configuration
-- ORM / DBAL specific settings
-
-### kipchak.couchdb.php
-Manages CouchDB connections:
-- CouchDB connection settings (host, port, credentials)
-
-### kipchak.memcached.php
-Manages database and cache connections:
-- Memcached server settings
-- Connection pool settings
-
-### kipchak.auth.php
-Authentication and authorization settings:
-- OAuth JWKS (JSON Web Key Set) settings
-- API Key-based authentication parameters
-
-
 ## Kipchak Provided Dependencies
 
 Kipchak ADK provides several built-in dependencies that are automatically configured and ready to use in your application:
@@ -131,7 +97,6 @@ All these dependencies are automatically wired into the service container and ca
 - `kipchak.sessions.php` - Session handling configuration
 - `kipchak.auth.php` - Authentication settings
 
-```markdown
 ## Kipchak Provided Middlewares
 
 Kipchak ADK comes with several pre-configured middleware components that help handle common API requirements:
@@ -155,7 +120,6 @@ Most middlewares can be:
 - Customized through their configuration parameters
 
 Global middleware configuration can be managed in the `middlewares` directory of your project.
-```
 
 ## Injecting your own dependencies
 Please see `sample.php` in the dependencies folder. Dependencies can be used via `$container->get()` as in a default Slim implementation.
