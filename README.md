@@ -108,8 +108,8 @@ Kipchak ADK comes with several pre-configured middleware components that help ha
 
 ### Security Middlewares
 - **Session Management** - Handles session operations for Backend for Frontend (BFF) applications
-- Supports CouchDB or Memcached as session storage backends
-- Configurable through `kipchak.sessions.php`
+  - Supports CouchDB or Memcached as session storage backends
+  - Configurable through `kipchak.sessions.php`
 
 ### Response Middlewares
 - **Error Handler** - Provides standardized error responses
