@@ -1,8 +1,22 @@
+[version-badge]: https://poser.pugx.org/mamluk/kipchak-template/v
+[downloads-badge]: https://poser.pugx.org/mamluk/kipchak-template/downloads
+[unstable-badge]: https://poser.pugx.org/mamluk/kipchak-template/v/unstable
+[license-badge]: https://poser.pugx.org/mamluk/kipchak-template/license
+[php-badge]: https://poser.pugx.org/mamluk/kipchak-template/require/php
+[packagist-url]: https://packagist.org/packages/mamluk/kipchak-template
+[slim-url]: https://www.slimframework.com/
+
+![Version][version-badge]
+![Downloads][downloads-badge]
+![Unstable][unstable-badge]
+![License][license-badge]
+![PHP Version][php-badge]
+
 <img src="https://1x.ax/mamluk/kipchak/core/~raw/master/.mamluk/logo.svg" />
 
 # Kipchak Starter Template
 
-This is a starter project based on the Kipchak (https://1.ax/mamluk/core) API Development Kit (ADK) - 
+This is a starter project based on the Kipchak (https://1.ax/mamluk/kipchak/core) API Development Kit (ADK) - 
 which is a set of components added on top of Slim Framework (https://www.slimframework.com/) to 
 help build APIs rapidly. 
 
