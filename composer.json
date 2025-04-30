@@ -1,6 +1,8 @@
 {
     "name": "mamluk/kipchak-template",
     "type": "template",
+    "homepage": "https://mamluk.net",
+    "license": "MIT",
     "require": {
         "php": ">=8.2",
         "mamluk/kipchak": "^0.46"
