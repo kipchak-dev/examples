@@ -1,4 +1,4 @@
-<img src="https://raw.githubusercontent.com/mam-luk/kipchak/master/.mamluk/logo.svg" />
+<img src="https://1x.ax/mamluk/kipchak/core/~raw/master/.mamluk/logo.svg" />
 
 # Kipchak Starter Template
 
