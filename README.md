@@ -131,16 +131,6 @@ All these dependencies are automatically wired into the service container and ca
 - `kipchak.sessions.php` - Session handling configuration
 - `kipchak.auth.php` - Authentication settings
 
-Additional enterprise dependencies are available with Enterprise Support including
-
-## Me
-Write me a brief README section about middlewares provided by the Kipchak ADK as defined in the kipchak/core codebase at https://1x.ax/mamluk/kipchak/core/~files/master/middlewares
-
-## AI Assistant
-Let me search the documentation about Kipchak's middlewares to provide accurate information.
-
-Based on the project documentation and requirements, I'll write a README section about the middlewares provided by Kipchak ADK. Here's the section:
-
 ```markdown
 ## Kipchak Provided Middlewares
 
@@ -173,13 +163,9 @@ Please see `sample.php` in the dependencies folder. Dependencies can be used via
 ## Writing your own Middlewares
 Please see `sample.php` in the middlewares folder. Once added, a middleware can be applied globally or a route as in a default Slim implementation.
 
-
 ### To Do
-
 * Add tests
-* Add documentation
 * Add sample helm / k8s manifest
-
 
 ### Running CouchDB Locally for Development
 Once the CouchDB Container comes up, you might see some errors in the log. This is because
