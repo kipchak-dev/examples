@@ -77,11 +77,15 @@ The **Community Edition** of Kipchak supports the following:
 
 Additional libraries and clients are available as part of *Enterprise Support*. These include, amongst others:
 
-* **Valkey**
-* **JWT** authentication / authorisation with a a public key
+* **Valkey** support for caching
+* **JWT** authentication / authorisation with a public key
 * **Binary only or security verified** containers
 * **RBAC Management**
 * **Personal Access Token Management**
+* **Rate limting** by IP address / user / API key
+* **OAuth 2 Client** with simplified token management for upstream APIs
+
+To learn more about Kipchak Enterprise Edition, please reach out via https://mamluk.net/contact.
 
 ## Kipchak Provided Dependencies
 
