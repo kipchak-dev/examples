@@ -96,10 +96,7 @@ Kipchak ADK provides several built-in dependencies that are automatically config
 - **MySQL/MariaDB Client** - Doctrine-based RDBMS client with ORM support
 - **Memcached Client** - Symfony Cache-based Memcached client for caching
 
-### Authentication & Session Management
-- **Session Handlers**
-  - CouchDB Session Storage
-  - Memcached Session Storage
+### Authentication
 - **Authentication Providers** (Community Edition)
   - API Key Authentication
   - OAuth JWKS Verification
