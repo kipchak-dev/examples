@@ -1,9 +1,9 @@
-[version-badge]: https://poser.pugx.org/mamluk/kipchak-template/v
-[downloads-badge]: https://poser.pugx.org/mamluk/kipchak-template/downloads
-[unstable-badge]: https://poser.pugx.org/mamluk/kipchak-template/v/unstable
-[license-badge]: https://poser.pugx.org/mamluk/kipchak-template/license
-[php-badge]: https://poser.pugx.org/mamluk/kipchak-template/require/php
-[packagist-url]: https://packagist.org/packages/mamluk/kipchak-template
+[version-badge]: https://poser.pugx.org/mamluk/kipchak-starter/v
+[downloads-badge]: https://poser.pugx.org/mamluk/kipchak-starter/downloads
+[unstable-badge]: https://poser.pugx.org/mamluk/kipchak-starter/v/unstable
+[license-badge]: https://poser.pugx.org/mamluk/kipchak-starter/license
+[php-badge]: https://poser.pugx.org/mamluk/kipchak-starter/require/php
+[packagist-url]: https://packagist.org/packages/mamluk/kipchak-starter
 [slim-url]: https://www.slimframework.com/
 
 ![Version][version-badge]
@@ -14,27 +14,27 @@
 
 <img src="https://1x.ax/mamluk/kipchak/core/~raw/master/.mamluk/logo.svg" />
 
-# Kipchak Starter Template
+# Kipchak Starter Project
 
 This is a starter project based on the Kipchak (https://1.ax/mamluk/kipchak/core) API Development Kit (ADK) - 
 which is a set of components added on top of Slim Framework (https://www.slimframework.com/) to 
 help build APIs rapidly. 
 
-This template demonstrates all the features of Kipchak which are configurable largely via YAML files in 
+This starter demonstrates all the features of Kipchak which are configurable largely via YAML files in 
 the config folder, and it lays out a foundation for an opinionated way of using Slim. It does not restrict
 any anything within Slim, and you can still use it as a vanilla Slim application.
 
 ## Install and Get Started
-Run this command from the directory to create a starter Kipchak API from the template.
+Run this command from the directory to create a starter Kipchak API from the starter.
 
 ```
-composer create-project mamluk/kipchak-template [api-name] -s dev
+composer create-project mamluk/kipchak-starter [api-name] -s dev
 ```
 
 Replace ```[api-name]``` with the desired directory name for your new application.
 
 ## Some Philosophy for the Philosophware Engineers
-The Kipchak template is structured with some assumptions about how APIs should be developed. These are
+The Kipchak starter is structured with some assumptions about how APIs should be developed. These are
 based around understanding definitions of certain common concepts like Entities, Models, etc. Our definitions
 are spelled out here. We'll deal with these in the order in which a request flows through Kipchak.
 
