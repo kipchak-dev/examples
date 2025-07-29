@@ -12,7 +12,7 @@
 ![License][license-badge]
 ![PHP Version][php-badge]
 
-<img src="https://1x.ax/mamluk/kipchak/core/~raw/master/.mamluk/logo.svg" />
+<img src="https://1x.ax/mamluk/kipchak/core/~raw/master/.mamluk/logo.svg" alt="Kipchak by Mamluk Starter Project" title="Kipchak by Mamluk Starter Project" />
 
 # Kipchak Starter Project
 
