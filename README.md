@@ -1,9 +1,9 @@
-[version-badge]: https://poser.pugx.org/mamluk/kipchak-starter/v
-[downloads-badge]: https://poser.pugx.org/mamluk/kipchak-starter/downloads
-[unstable-badge]: https://poser.pugx.org/mamluk/kipchak-starter/v/unstable
-[license-badge]: https://poser.pugx.org/mamluk/kipchak-starter/license
-[php-badge]: https://poser.pugx.org/mamluk/kipchak-starter/require/php
-[packagist-url]: https://packagist.org/packages/mamluk/kipchak-starter
+[version-badge]: https://poser.pugx.org/mamluk/kipchak-template/v
+[downloads-badge]: https://poser.pugx.org/mamluk/kipchak-template/downloads
+[unstable-badge]: https://poser.pugx.org/mamluk/kipchak-template/v/unstable
+[license-badge]: https://poser.pugx.org/mamluk/kipchak-template/license
+[php-badge]: https://poser.pugx.org/mamluk/kipchak-template/require/php
+[packagist-url]: https://packagist.org/packages/mamluk/kipchak-template
 [slim-url]: https://www.slimframework.com/
 
 ![Version][version-badge]
@@ -28,7 +28,7 @@ any anything within Slim, and you can still use it as a vanilla Slim application
 Run this command from the directory to create a starter Kipchak API from the starter.
 
 ```
-composer create-project mamluk/kipchak-starter [api-name] -s dev
+composer create-project mamluk/kipchak-template [api-name] -s dev
 ```
 
 Replace ```[api-name]``` with the desired directory name for your new application.
