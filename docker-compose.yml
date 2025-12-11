@@ -21,8 +21,12 @@ services:
       MEMCACHED_PORT: 11211
     ports:
       - "80:80"
-    volumes:
-      - .:/var/www
+      - "2019:2019"
+    develop:
+      watch:
+        - action: sync+restart
+          path: .
+          target: /var/www
     privileged: true
     container_name: api
 
