@@ -20,14 +20,14 @@ services:
       MEMCACHED_HOST: "memcached"
       MEMCACHED_PORT: 11211
     ports:
-      - "80:8080"
+      - "80:80"
     volumes:
       - .:/var/www
     privileged: true
     container_name: api
 
   mysql:
-    image: percona:8
+    image: mysql:8
     environment:
       MYSQL_ROOT_PASSWORD: "root"
       MYSQL_USER: "api"
@@ -36,7 +36,7 @@ services:
     container_name: mysql
 
   couchdb:
-    image: couchdb:3.2
+    image: couchdb:3.5
     environment:
       COUCHDB_USER: "api"
       COUCHDB_PASSWORD: "api"
