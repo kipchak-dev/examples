@@ -34,7 +34,7 @@ return
                 'metadata_dirs' => [
                     realpath(__DIR__ . '/../api/Entities/Doctrine/Primary')
                 ],
-                'metadata_format' => 'attributes', // attributes or annotations
+                'metadata_format' => 'attributes', // attributes or annotations. Annotations are only here for legacy reasons since Kipchak 1.0+.
                 'connection' => 'primary', // Name of connection from 'dbal' above to use for the ORM
                 'cache' => [
                     'enabled' => true, // Kipchak will only look at this if dev_mode = false

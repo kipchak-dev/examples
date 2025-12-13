@@ -3,8 +3,9 @@
 echo $SERVER_ROOT
 
 # Generate Doctrine ORM proxies
-cd /var/www && vendor/bin/doctrine orm:generate-proxies --em primary
+cd /var/www && php bin/doctrine orm:generate-proxies --em primary
 
 # Start FrankenPHP / Caddy
+set -e
 cd $SERVER_ROOT
 exec frankenphp run --config /etc/frankenphp/Caddyfile
