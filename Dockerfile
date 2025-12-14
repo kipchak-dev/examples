@@ -14,12 +14,3 @@ RUN rm -rf /var/www/.gitignore
 
 # Set the correct permissions
 # RUN chown -R www-data:www-data /var/www/
-
-# The correct environment variables are set in the docker-compose file. Set any other ones here.
-
-###############################################################################################################
-## If you are using Doctrine ORM, comment out the next 3 lines to generate proxies at container startup time. ##
-# COPY bin/proxies /usr/local/bin/doctrine-proxies.sh
-# RUN chmod -R 777 /tmp && chmod 755 /usr/local/bin/doctrine-proxies.sh
-# CMD ["/usr/local/bin/doctrine-proxies.sh"]
-###################################### Doctrine Proxies end ###################################################
