@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3c859de496bb3f89f8af659b42c6cc45",
+    "content-hash": "daee47377db8d5bd990c92f390872359",
     "packages": [
         {
             "name": "carbonphp/carbon-doctrine-types",
@@ -2112,11 +2112,11 @@
         },
         {
             "name": "mamluk/kipchak",
-            "version": "1.1",
+            "version": "1.2",
             "source": {
                 "type": "git",
                 "url": "https://1x.ax/mamluk/kipchak/core.git",
-                "reference": "bacfcafc8819f9ed159c99d94dcdca39456871aa"
+                "reference": "5cc2352fd13aa8899ce89430274255cbee16bbed"
             },
             "require": {
                 "cuyz/valinor": "^1.17",
@@ -2152,7 +2152,7 @@
                 "apis",
                 "microservices"
             ],
-            "time": "2025-11-28T11:58:33+00:00"
+            "time": "2025-12-14T05:04:54+00:00"
         },
         {
             "name": "monolog/monolog",
