@@ -69,6 +69,16 @@ of the scope of this documentation, but if you don't know what it is,
 * PHP 8.4+
 * Composer
 
+## Run the API and see it in action
+
+This starter project comes with a docker-compose file that will start the API, CouchDB, Memcached and MySQL containers for a full experience.
+
+Kipchak runs in worker mode using FrankenPHP for extremely high and efficient performance.
+
+Simply run ```docker compose up --build --watch``` from the root of the project and develop like you normally would.
+
+If you don't want to use any of the drivers or middlewares, simply remove them from the composer.json file and run `composer update`. You can also remove the related config file in the config directory.
+
 ## Kipchak 2.x Architecture
 
 Kipchak 2.x has been redesigned with a modular architecture where drivers and middleware are separate packages. This allows you to install only what you need, keeping your application lightweight.
