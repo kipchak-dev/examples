@@ -16,13 +16,9 @@
 
 # Kipchak Starter Project
 
-This is a starter project based on the Kipchak (https://1.ax/mamluk/kipchak/core) API Development Kit (ADK) - 
-which is a set of components added on top of Slim Framework (https://www.slimframework.com/) to 
-help build APIs rapidly. 
+This is a starter project based on Kipchak Core 2.x (https://1.ax/mamluk/kipchak/core/~files/2.x) - an API Development Kit (ADK) built on top of Slim Framework (https://www.slimframework.com/) designed for rapid API development.
 
-This starter demonstrates all the features of Kipchak which are configurable largely via YAML files in 
-the config folder, and it lays out a foundation for an opinionated way of using Slim. It does not restrict
-any anything within Slim, and you can still use it as a vanilla Slim application.
+Kipchak 2.x introduces a modular architecture with drivers and middleware as separate, composable packages, making it lightweight and extensible. This starter demonstrates all the features of Kipchak, which are configurable via PHP files in the config folder. It provides an opinionated structure for building APIs while maintaining full compatibility with vanilla Slim Framework.
 
 ## Install and Get Started
 Run this command from the directory to create a starter Kipchak API from the starter.
@@ -68,111 +64,328 @@ lifecycle, saving memory, cpu and valuable milliseconds. Explaining what a servi
 of the scope of this documentation, but if you don't know what it is,
 <a href="http://fabien.potencier.org/do-you-need-a-dependency-injection-container.html" target="_blank">this article</a> can help.
 
-## Kipchak provided database and cache clients
-The **Community Edition** of Kipchak supports the following:
+## Requirements
 
-* **Memcached** (based on Symfony Cache)
-* **Apache CouchDB** (3.2+)
-* **MySQL** or a MySQL drop-in (Percona, MariaDB, etc.) (based on Doctrine)
+* PHP 8.4+
+* Composer
 
-Additional libraries and clients are available as part of *Enterprise Support*. These include, amongst others:
+## Kipchak 2.x Architecture
+
+Kipchak 2.x has been redesigned with a modular architecture where drivers and middleware are separate packages. This allows you to install only what you need, keeping your application lightweight.
+
+### What's New in 2.x
+
+* **Modular Package Structure**: Drivers and middleware are now standalone packages
+* **New Namespace**: Changed from `Mamluk\Kipchak` to `Kipchak`
+* **Driver Interface**: Standardized interface for creating custom drivers
+* **Middleware Interface**: Standardized interface for creating custom middleware
+* **Lightweight Core**: Core package contains only essential components
+
+## Available Drivers (Community Edition)
+
+Kipchak 2.x provides the following drivers as separate packages:
+
+* **kipchak/driver-config** - Configuration management
+* **kipchak/driver-logger** - Logging (Monolog-based)
+* **kipchak/driver-http** - HTTP client for external API calls
+* **kipchak/driver-filecache** - File-based caching (Symfony Cache)
+* **kipchak/driver-memcached** - Memcached support (Symfony Cache)
+* **kipchak/driver-couchdb** - Apache CouchDB client (3.2+)
+* **kipchak/driver-doctrine** - Doctrine ORM for MySQL/MariaDB/Percona
+* **kipchak/driver-rabbitmq** - RabbitMQ messaging
+* **kipchak/driver-object-storage** - Object storage integration
+
+## Available Middleware (Community Edition)
+
+* **kipchak/middleware-error** - Error handling and standardized error responses
+* **kipchak/middleware-auth** - Authentication (API Key, JWKS OAuth verification)
+* **kipchak/middleware-subash** - A WAF for API endpoints
+
+## Enterprise Edition Features
+
+Additional drivers and middleware are available as part of *Enterprise Support*:
 
 * **Valkey** support for caching
 * **JWT** authentication / authorisation with a public key
 * **Binary only or security verified** containers
 * **RBAC Management**
 * **Personal Access Token Management**
-* **Rate limting** by IP address / user / API key
 * **OAuth 2 Client** with simplified token management for upstream APIs
 
 To learn more about Kipchak Enterprise Edition, please reach out via https://mamluk.net/contact.
 
-## Kipchak Provided Dependencies
+## Working with Drivers
 
-Kipchak ADK provides several built-in dependencies that are automatically configured and ready to use in your application:
+### Using Drivers in Your Application
 
-### Database Clients
-- **CouchDB Client** - Preconfigured Apache CouchDB client for document storage
-- **MySQL/MariaDB Client** - Doctrine-based RDBMS client with ORM support
-- **Memcached Client** - Symfony Cache-based Memcached client for caching
+Drivers must be initialized in `drivers/drivers.php` before they can be used. The order matters - drivers like Config, Logger, and HTTP should be initialized first as they may be used by other drivers:
 
-### Authentication
-- **Authentication Providers** (Community Edition)
-  - API Key Authentication
-  - OAuth JWKS Verification
+```php
+<?php
+use Psr\Container\ContainerInterface;
 
-### HTTP Components
-- **HTTP Client** - Pre-configured HTTP client for making external API requests
-- **CORS Configuration** - Built-in CORS support
+/** @var ContainerInterface $container */
 
-All these dependencies are automatically wired into the service container and can be configured through the respective configuration files in the `config/` directory:
+\Kipchak\Driver\Config\Driver::initialise($container);
+\Kipchak\Driver\Logger\Driver::initialise($container);
+\Kipchak\Driver\Http\Driver::initialise($container);
+\Kipchak\Driver\Filecache\Driver::initialise($container);
+\Kipchak\Driver\Memcached\Driver::initialise($container);
+\Kipchak\Driver\CouchDB\Driver::initialise($container);
+\Kipchak\Driver\Doctrine\Driver::initialise($container);
+```
+
+### Accessing Drivers in Controllers
+
+Once initialized, drivers can be accessed using their static `get()` method:
+
+```php
+<?php
+namespace Api\Controllers\v1;
+
+use Kipchak\Core\Components\Controllers;
+use Kipchak\Core\Components\Http;
+use Kipchak\Driver\CouchDB\Driver as CouchDB;
+use Kipchak\Driver\Memcached\Driver as MemcachedDriver;
+use Psr\Http\Message\ResponseInterface;
+use Psr\Http\Message\ServerRequestInterface;
+
+class Example extends Controllers\Base
+{
+    public function get(ServerRequestInterface $request, ResponseInterface $response, array $args): ResponseInterface
+    {
+        // Access CouchDB driver with connection name
+        $couchdb = CouchDB::get('default');
+
+        // Access Memcached driver with cache pool name
+        $cache = MemcachedDriver::get('cache');
+
+        // Use the drivers
+        $couchdb->createDatabase();
+        $document = json_encode(['key' => 'value']);
+        $couchdb->create('doc-id', $document);
+
+        // Cache with expiration
+        $value = $cache->get('cache-key', function (ItemInterface $item) {
+            $item->expiresAfter(3600);
+            return 'cached value';
+        });
+
+        return Http\Response::json($response, ['status' => 'success'], 200);
+    }
+}
+```
+
+### Creating Custom Drivers
+
+To create a custom driver, implement the `DriverInterface` from Kipchak Core:
+
+```php
+<?php
+namespace YourApp\Drivers;
+
+use Kipchak\Core\Interfaces\DriverInterface;
+use Psr\Container\ContainerInterface;
+
+class CustomDriver implements DriverInterface
+{
+    protected static ?self $instance = null;
+    protected ContainerInterface $container;
+    protected array $config;
+
+    /**
+     * Initialize the driver with the container
+     */
+    public static function initialise(ContainerInterface $container): void
+    {
+        if (self::$instance === null) {
+            self::$instance = new self($container);
+        }
+    }
+
+    /**
+     * Get driver instance with optional connection name
+     */
+    public static function get(string $connection = 'default'): mixed
+    {
+        if (self::$instance === null) {
+            throw new \RuntimeException('Driver not initialized');
+        }
+
+        // Return your driver's client/connection
+        return self::$instance->getConnection($connection);
+    }
+
+    private function __construct(ContainerInterface $container)
+    {
+        $this->container = $container;
+        $this->config = $container->get('config')->get('your-driver') ?? [];
+
+        // Initialize your driver logic here
+    }
+
+    private function getConnection(string $name): mixed
+    {
+        // Return connection/client instance
+        return $this->connections[$name] ?? null;
+    }
+}
+```
+
+Then initialize it in `drivers/drivers.php`:
+
+```php
+\YourApp\Drivers\CustomDriver::initialise($container);
+```
+
+## Working with Middleware
+
+### Using Middleware
+
+Middleware can be applied globally in `middlewares/middlewares.php`:
+
+```php
+<?php
+use Slim\App;
+
+/** @var App $app */
+
+// Initialize global middleware
+\Kipchak\Middleware\Error\Middleware::initialise($app);
+\Kipchak\Middleware\Auth\Middleware::initialise($app);
+```
+
+Or apply to specific routes:
+
+```php
+<?php
+$app->get('/protected', [Controller::class, 'method'])
+    ->add(\Kipchak\Middleware\Auth\Middleware::get());
+```
+
+### Creating Custom Middleware
+
+To create custom middleware, implement the `MiddlewareInterface` from Kipchak Core:
+
+```php
+<?php
+namespace YourApp\Middlewares;
+
+use Kipchak\Core\Interfaces\Middleware;
+use Psr\Http\Message\ResponseInterface;
+use Psr\Http\Message\ServerRequestInterface;
+use Psr\Http\Server\RequestHandlerInterface;
+use Slim\App;
+
+class CustomMiddleware implements Middleware
+{
+    protected static ?self $instance = null;
+    protected App $app;
+
+    /**
+     * Initialize middleware with the Slim app
+     */
+    public static function initialise(App $app): void
+    {
+        if (self::$instance === null) {
+            self::$instance = new self($app);
+            $app->add(self::$instance);
+        }
+    }
+
+    /**
+     * Get middleware instance for route-specific application
+     */
+    public static function get(): self
+    {
+        if (self::$instance === null) {
+            throw new \RuntimeException('Middleware not initialized');
+        }
+        return self::$instance;
+    }
+
+    private function __construct(App $app)
+    {
+        $this->app = $app;
+
+        // Access container for config, logger, etc.
+        $container = $app->getContainer();
+        $this->config = $container->get('config')->get('your-middleware') ?? [];
+    }
+
+    /**
+     * Process the request
+     */
+    public function __invoke(
+        ServerRequestInterface $request,
+        RequestHandlerInterface $handler
+    ): ResponseInterface
+    {
+        // Before logic - modify request or check conditions
+        $customHeader = $request->getHeader('X-Custom-Header');
+
+        if (empty($customHeader)) {
+            // Return early response if needed
+            $response = new \Slim\Psr7\Response();
+            $response->getBody()->write(json_encode(['error' => 'Missing header']));
+            return $response->withStatus(400)
+                           ->withHeader('Content-Type', 'application/json');
+        }
+
+        // Continue to next middleware/controller
+        $response = $handler->handle($request);
+
+        // After logic - modify response
+        return $response->withHeader('X-Processed-By', 'CustomMiddleware');
+    }
+}
+```
+
+Then add it to `middlewares/middlewares.php`:
+
+```php
+\YourApp\Middlewares\CustomMiddleware::initialise($app);
+```
+
+## Configuration
+
+All drivers and middleware are configured through PHP files in the `config/` directory:
+
+- `kipchak.api.php` - API settings (name, debug mode, logging)
 - `kipchak.doctrine.php` - MySQL/Database settings
 - `kipchak.couchdb.php` - CouchDB connection configuration
 - `kipchak.memcached.php` - Memcached settings
-- `kipchak.sessions.php` - Session handling configuration
 - `kipchak.auth.php` - Authentication settings
 
-## Kipchak Provided Middlewares
+See the documentation for each driver or middleware for more configuration options.
 
-Kipchak ADK comes with several pre-configured middleware components that help handle common API requirements:
-
-### Authentication Middlewares
-- **API Key Authentication** - Validates requests using API keys
-- **OAuth JWKS Verification** - Handles JWT token validation using JWKS
-- Configurable through `kipchak.auth.php`
-
-### Security Middlewares
-- **Session Management** - Handles session operations for Backend for Frontend (BFF) applications
-  - Supports CouchDB or Memcached as session storage backends
-  - Configurable through `kipchak.sessions.php`
-
-### Response Middlewares
-- **Error Handler** - Provides standardized error responses
-
-Most middlewares can be:
-- Configured through the respective configuration files in the `config/` directory
-- Applied globally or to specific route groups
-- Customized through their configuration parameters
-
-Global middleware configuration can be managed in the `middlewares` directory of your project.
-
-## Injecting your own dependencies
-Please see `sample.php` in the dependencies folder. Dependencies can be used via `$container->get()` as in a default Slim implementation.
-
-## Writing your own Middlewares
-Please see `sample.php` in the middlewares folder. Once added, a middleware can be applied globally or a route as in a default Slim implementation.
+Configuration files return arrays that can be accessed via the Config driver.
 
 ### To Do
 * Add tests
 * Add sample helm / k8s manifest
 
-### Running CouchDB Locally for Development
-Once the CouchDB Container comes up, you might see some errors in the log. This is because
-CouchDB expects a _users database to be created for user management. Let's create this 
-so CouchDB is ready to be used. Run the following on your terminal:
+## Running CouchDB Locally for Development
 
-```
+Once the CouchDB container starts, you may see errors in the log because CouchDB expects a `_users` database for user management. Create it by running:
+
+```bash
 curl -X PUT http://api:api@localhost:5984/_users
 curl -X PUT http://api:api@localhost:5984/api
 ```
 
-You can also create a new database(s) for managing any data your API creates. Let's create a database called 'api':
+Create additional databases for your API data as needed:
 
-```
+```bash
 curl -X PUT http://api:api@localhost:5984/api
 ```
 
-### Session Handling
-If you are  building  a Backend for Frontend (BfF) with Kipchak, you will need to enable session handling.
-Kipchak supports sessions using either CouchDB or Memcached. This can be configured in config/kipchak.sessions.php.
+## Additional Resources
 
-#### With CouchDB
+* [Kipchak Core Repository](https://1.ax/mamluk/kipchak/core/~files/2.x)
+* [Slim Framework Documentation](https://www.slimframework.com/)
+* [Dependency Injection Containers](http://fabien.potencier.org/do-you-need-a-dependency-injection-container.html)
 
-If you are enabling session management with CouchDB in the kipchak.sessions.php config file in the config folder, you
-should also create database to manage these sessions set this correctly on line 13 of this file.
+## Support
 
-If this is set to `api_sessions`, for instance, run the following in your terminal to create the database:
-
-```
-curl -X PUT http://api:api@localhost:5984/api_sessions
-```
+For questions, issues, or enterprise support inquiries, visit [Mamluk Contact](https://mamluk.net/contact).
