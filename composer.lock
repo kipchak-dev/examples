@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4892305f4c30d5df6903aa01569e8798",
+    "content-hash": "d7c85a560a641ff7e8f9dafa6c12db1c",
     "packages": [
         {
             "name": "carbonphp/carbon-doctrine-types",
@@ -2026,14 +2026,10 @@
             "source": {
                 "type": "git",
                 "url": "https://1x.ax/mamluk/kipchak/core",
-                "reference": "90326c8d2ed0fbee88d6ee6ca09521bb72b9e784"
+                "reference": "cd2848c60f5158d3983a3a7b2033bd2ef62efbd6"
             },
             "require": {
                 "cuyz/valinor": "^1.17",
-                "firebase/php-jwt": "^6.9",
-                "kipchak/driver-config": "dev-master",
-                "kipchak/driver-filecache": "dev-master",
-                "kipchak/driver-logger": "dev-master",
                 "php": ">=8.4",
                 "php-di/php-di": "^7.1",
                 "slim/psr7": "^1.8",
@@ -2059,7 +2055,7 @@
                 "apis",
                 "microservices"
             ],
-            "time": "2025-12-24T07:54:59+00:00"
+            "time": "2025-12-24T11:11:58+00:00"
         },
         {
             "name": "kipchak/driver-config",
@@ -2067,7 +2063,7 @@
             "source": {
                 "type": "git",
                 "url": "https://1x.ax/mamluk/kipchak/drivers/config",
-                "reference": "70fe56b22d2c84d1ee5fdb72f593a9ac5aaa6502"
+                "reference": "b3ff374495e99128905e4ce7ab0d9cb98ae105ae"
             },
             "require": {
                 "kipchak/core": "2.x-dev"
@@ -2092,7 +2088,7 @@
                 "http",
                 "microservices"
             ],
-            "time": "2025-12-23T10:13:56+00:00"
+            "time": "2025-12-24T10:17:01+00:00"
         },
         {
             "name": "kipchak/driver-couchdb",
@@ -2134,7 +2130,7 @@
             "source": {
                 "type": "git",
                 "url": "https://1x.ax/mamluk/kipchak/drivers/doctrine",
-                "reference": "5f371cf51f9c4b50764ddef1dd3f728a75f590fd"
+                "reference": "c1d8331a9c21b79bf739cb6a2ff9934839ad183d"
             },
             "require": {
                 "doctrine/orm": "^4",
@@ -2165,7 +2161,7 @@
                 "orm",
                 "pgsql"
             ],
-            "time": "2025-12-24T09:01:29+00:00"
+            "time": "2025-12-24T10:14:03+00:00"
         },
         {
             "name": "kipchak/driver-filecache",
@@ -2173,7 +2169,7 @@
             "source": {
                 "type": "git",
                 "url": "https://1x.ax/mamluk/kipchak/drivers/filecache",
-                "reference": "d40abb4dec34447894e690976d17fbff49e5d64a"
+                "reference": "87e2f4a1caefbfebc7d9f3d93783892439552e61"
             },
             "require": {
                 "kipchak/core": "2.x-dev",
@@ -2199,7 +2195,7 @@
                 "http",
                 "microservices"
             ],
-            "time": "2025-12-23T12:58:04+00:00"
+            "time": "2025-12-24T10:18:08+00:00"
         },
         {
             "name": "kipchak/driver-http",
@@ -2207,7 +2203,7 @@
             "source": {
                 "type": "git",
                 "url": "https://1x.ax/mamluk/kipchak/drivers/http",
-                "reference": "e4392edde507e154d563b3ec069364f1ee47856c"
+                "reference": "f15dd2ffe44739155e592097630ac6333b3cc6a4"
             },
             "require": {
                 "guzzlehttp/guzzle": "^7.10",
@@ -2233,7 +2229,7 @@
                 "http",
                 "microservices"
             ],
-            "time": "2025-12-23T10:13:20+00:00"
+            "time": "2025-12-24T10:16:23+00:00"
         },
         {
             "name": "kipchak/driver-logger",
@@ -2241,7 +2237,7 @@
             "source": {
                 "type": "git",
                 "url": "https://1x.ax/mamluk/kipchak/drivers/logger",
-                "reference": "55fa4c6c5a84c3926a497cc7ddd48efa654289bc"
+                "reference": "3b89685c3207f12503d447f5dd64a47d45d0e35d"
             },
             "require": {
                 "kipchak/core": "2.x-dev",
@@ -2268,7 +2264,7 @@
                 "http",
                 "microservices"
             ],
-            "time": "2025-12-24T08:36:25+00:00"
+            "time": "2025-12-24T10:13:39+00:00"
         },
         {
             "name": "kipchak/driver-memcached",
@@ -2276,7 +2272,7 @@
             "source": {
                 "type": "git",
                 "url": "https://1x.ax/mamluk/kipchak/drivers/memcached",
-                "reference": "6448cd30bd59d823cf6e996be8f3a3b1150f101f"
+                "reference": "f1928dcd3066bbf3fa5d5e5a2ee736d469b7c6ff"
             },
             "require": {
                 "ext-memcached": "*",
@@ -2302,7 +2298,80 @@
                 "memcached",
                 "microservices"
             ],
-            "time": "2025-12-24T08:52:01+00:00"
+            "time": "2025-12-24T10:14:47+00:00"
+        },
+        {
+            "name": "kipchak/middleware-auth",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://1x.ax/mamluk/kipchak/middlewares/auth",
+                "reference": "405bc0244c8a5d5fe93f9284797c34dfbaab1d4c"
+            },
+            "require": {
+                "firebase/php-jwt": "^6.9",
+                "kipchak/core": "2.x-dev",
+                "kipchak/driver-config": "dev-master",
+                "kipchak/driver-filecache": "dev-master",
+                "kipchak/driver-logger": "dev-master"
+            },
+            "default-branch": true,
+            "type": "middleware",
+            "autoload": {
+                "psr-4": {
+                    "Kipchak\\Middleware\\Auth\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "The Official Auth Middleware for the Kipchak API Development Kit (ADK)",
+            "homepage": "https://mamluk.net",
+            "keywords": [
+                "JWKS",
+                "Mamluk",
+                "api keys",
+                "apis",
+                "authn",
+                "authz",
+                "http",
+                "microservices"
+            ],
+            "time": "2025-12-24T11:11:42+00:00"
+        },
+        {
+            "name": "kipchak/middleware-error",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://1x.ax/mamluk/kipchak/middlewares/error",
+                "reference": "fded271c4b26521c295860db52f4ea61ce9ce75c"
+            },
+            "require": {
+                "kipchak/core": "2.x-dev",
+                "kipchak/driver-config": "dev-master"
+            },
+            "default-branch": true,
+            "type": "middleware",
+            "autoload": {
+                "psr-4": {
+                    "Kipchak\\Middleware\\Error\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "An Error Handling Middleware for the Kipchak API Development Kit (ADK)",
+            "homepage": "https://mamluk.net",
+            "keywords": [
+                "Mamluk",
+                "apis",
+                "http",
+                "microservices"
+            ],
+            "time": "2025-12-24T11:13:10+00:00"
         },
         {
             "name": "laravel/serializable-closure",
@@ -7893,7 +7962,9 @@
         "kipchak/driver-filecache": 20,
         "kipchak/driver-http": 20,
         "kipchak/driver-logger": 20,
-        "kipchak/driver-memcached": 20
+        "kipchak/driver-memcached": 20,
+        "kipchak/middleware-auth": 20,
+        "kipchak/middleware-error": 20
     },
     "prefer-stable": true,
     "prefer-lowest": false,

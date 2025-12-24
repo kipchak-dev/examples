@@ -11,7 +11,9 @@
         "kipchak/driver-http": "dev-master",
         "kipchak/driver-filecache": "dev-master",
         "kipchak/driver-doctrine": "dev-master",
-        "kipchak/driver-logger": "dev-master"
+        "kipchak/driver-logger": "dev-master",
+        "kipchak/middleware-error": "dev-master",
+        "kipchak/middleware-auth": "dev-master"
     },
     "require-dev": {
         "phpunit/phpunit": "^9.6"
