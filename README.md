@@ -58,7 +58,7 @@ will get stored in a CouchDB document.
 HTTP clients or any other external systems. These must be versioned, and are the first step to ensuring that any data that comes with the 
 request matches what you expect. These must also be versioned, as they are ultimately what form the API contract.
 
-* Dependencies - Dependencies are common libraries or classes that you might want to use throughout your API.
+* Drivers - Drivers are common libraries or classes that you might want to use throughout your API.
 You inject them as dependencies into the service container so they are created only once during the request / response
 lifecycle, saving memory, cpu and valuable milliseconds. Explaining what a service / IO / dependency container is not part 
 of the scope of this documentation, but if you don't know what it is,
