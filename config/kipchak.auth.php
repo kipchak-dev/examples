@@ -1,7 +1,5 @@
 <?php
 
-use function Mamluk\Kipchak\env;
-
 return [
     'jwks' => [
         'enabled' => false, // to enable this globally

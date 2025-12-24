@@ -2,20 +2,22 @@
 
 namespace Api\Controllers\v1;
 
-use Mamluk\Kipchak\Components\Controllers;
-use Mamluk\Kipchak\Components\Http;
+use Kipchak\Core\Components\Controllers;
+use Kipchak\Core\Components\Http;
+use Kipchak\Driver\Filecache\Driver as FilecacheDriver;
+use Kipchak\Driver\Memcached\Driver as MemcaachedDriver;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
 use Symfony\Contracts\Cache\ItemInterface;
 
 /**
- * All Controllers extending Controllers\Slim Contain the Service / DI Container as a protected property called $container.
+ * All Controllers extending Controllers\Base Contain the Service / DI Container as a protected property called $container.
  * Access it using $this->container in your controller.
  * Default objects bundled into a container are:
  * logger - which returns an instance of \Monolog\Logger. This is also a protected property on your controller. Access it using $this->logger.
  */
 
-class Cache extends Controllers\Slim
+class Cache extends Controllers\Base
 {
 
     public function get(ServerRequestInterface $request, ResponseInterface $response, array $args): ResponseInterface
@@ -23,15 +25,15 @@ class Cache extends Controllers\Slim
 
         $this->logger->debug('Loading cache');
 
-        $memcached = $this->container->get('cache.memcached.cache');
+        $memcached  = MemcaachedDriver::get('cache');
 
         $fromMemcached = $memcached->get('kipchak', function (ItemInterface $item) {
-            $item->expiresAfter(3600);
+            $item->expiresAfter(2);
 
-            return 'Ehthnic origin of the Mamluks';
+            return 'Ethnic origin of the Mamluks';
         });
 
-        $file = $this->container->get('cache.file');
+        $file = FilecacheDriver::get();
 
         $fromFile = $file->get('baybars', function (ItemInterface $item) {
             $item->expiresAfter(3600);

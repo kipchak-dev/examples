@@ -1,8 +1,8 @@
 <?php
 
 use Api\Controllers;
-use Mamluk\Kipchak\Components\Middlewares\AuthJwks;
-use Mamluk\Kipchak\Components\Middlewares\AuthKey;
+use Kipchak\Core\Components\Middlewares\AuthJwks;
+use Kipchak\Core\Components\Middlewares\AuthKey;
 use Slim\Routing\RouteCollectorProxy;
 
 $app->group('/v1', function(RouteCollectorProxy $group) {

@@ -1,6 +1,6 @@
 <?php
 
-use function Mamluk\Kipchak\env;
+use function Kipchak\Core\env;
 
 return
 [

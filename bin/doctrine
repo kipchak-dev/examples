@@ -2,9 +2,12 @@
 <?php
 use Doctrine\ORM\Tools\Console\ConsoleRunner;
 use Doctrine\ORM\Tools\Console\EntityManagerProvider\SingleManagerProvider;
-use Mamluk\Kipchak\Api;
+use Kipchak\Core\Api;
 use Slim\App;
 use Psr\Container\ContainerInterface;
+use Kipchak\Driver\Config\Driver as Config;
+use Kipchak\Driver\Doctrine\Driver as Doctrine;
+
 require_once (realpath(__DIR__ . '/../vendor/autoload.php'));
 
 /**
@@ -17,7 +20,7 @@ $app = Api::bootCli();
  */
 $container = $app->getContainer();
 
-$ems = $container->get('config')['kipchak.doctrine']['orm']['entity_managers'];
+$ems = Config::get('kipchak.doctrine')['orm']['entity_managers'];
 
 $entityManagers = [];
 
@@ -28,7 +31,7 @@ $commands = [
 
 foreach ($ems as $name => $em) {
     ConsoleRunner::run(
-            new SingleManagerProvider($container->get('database.doctrine.entitymanager.' . $name), $name),
+            new SingleManagerProvider(Doctrine::get('entitymanager.' . $name), $name),
             $commands
     );
 }

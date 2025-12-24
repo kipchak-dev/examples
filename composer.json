@@ -1,14 +1,20 @@
 {
-    "name": "mamluk/kipchak-starter",
+    "name": "kipchak/starter",
     "type": "template",
     "homepage": "https://mamluk.net",
     "license": "MIT",
     "require": {
         "php": ">=8.4",
-        "mamluk/kipchak": "^1.3"
+        "kipchak/core": "2.x-dev",
+        "kipchak/driver-couchdb": "dev-master",
+        "kipchak/driver-memcached": "dev-master",
+        "kipchak/driver-http": "dev-master",
+        "kipchak/driver-filecache": "dev-master",
+        "kipchak/driver-doctrine": "dev-master",
+        "kipchak/driver-logger": "dev-master"
     },
     "require-dev": {
-        "phpunit/phpunit": "^9.5"
+        "phpunit/phpunit": "^9.6"
     },
     "autoload": {
         "psr-4": {
