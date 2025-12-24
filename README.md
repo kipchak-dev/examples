@@ -28,7 +28,7 @@ any anything within Slim, and you can still use it as a vanilla Slim application
 Run this command from the directory to create a starter Kipchak API from the starter.
 
 ```
-composer create-project mamluk/kipchak-template [api-name] -s dev
+composer create-project kipchak/starter [api-name] -s dev
 ```
 
 Replace ```[api-name]``` with the desired directory name for your new application.
