@@ -3,7 +3,7 @@
 namespace Api\Controllers\v1;
 
 use Kipchak\Core\Components\Controllers;
-use Kipchak\Driver\CouchDB\Driver as CouchDB;
+use Kipchak\Driver\CouchDB\CouchDB;
 use Kipchak\Core\Components\Http;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;

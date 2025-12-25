@@ -4,8 +4,8 @@ namespace Api\Controllers\v1;
 
 use Kipchak\Core\Components\Controllers;
 use Kipchak\Core\Components\Http;
-use Kipchak\Driver\Filecache\Driver as FilecacheDriver;
-use Kipchak\Driver\Memcached\Driver as MemcaachedDriver;
+use Kipchak\Driver\Filecache\Filecache as FilecacheDriver;
+use Kipchak\Driver\Memcached\Memcached as MemcachedDriver;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
 use Symfony\Contracts\Cache\ItemInterface;
@@ -25,7 +25,7 @@ class Cache extends Controllers\Base
 
         $this->logger->debug('Loading cache');
 
-        $memcached  = MemcaachedDriver::get('cache');
+        $memcached  = MemcachedDriver::get('cache');
 
         $fromMemcached = $memcached->get('kipchak', function (ItemInterface $item) {
             $item->expiresAfter(2);
