@@ -136,6 +136,7 @@ use Psr\Container\ContainerInterface;
 
 /** @var ContainerInterface $container */
 
+// The initialise method also has a second parameter to pass a custom config file name if the driver gives you an option to do so.
 \Kipchak\Driver\Config\Driver::initialise($container);
 \Kipchak\Driver\Logger\Driver::initialise($container);
 \Kipchak\Driver\Http\Driver::initialise($container);
@@ -194,58 +195,46 @@ To create a custom driver, implement the `DriverInterface` from Kipchak Core:
 <?php
 namespace YourApp\Drivers;
 
-use Kipchak\Core\Interfaces\DriverInterface;
+use Kipchak\Core\Interfaces\Driver;
 use Psr\Container\ContainerInterface;
 
-class CustomDriver implements DriverInterface
+class Driver implements Interfaces\Driver
 {
-    protected static ?self $instance = null;
-    protected ContainerInterface $container;
-    protected array $config;
+    protected static ContainerInterface $container;
 
-    /**
-     * Initialize the driver with the container
-     */
-    public static function initialise(ContainerInterface $container): void
+    public static function initialise(ContainerInterface $container, ?string $configFileName = null): void
     {
-        if (self::$instance === null) {
-            self::$instance = new self($container);
-        }
+        self::$container = $container;
+        self::set($configFileName);
     }
 
-    /**
-     * Get driver instance with optional connection name
-     */
-    public static function get(string $connection = 'default'): mixed
+    public static function set(?string $configFileName = null): void
     {
-        if (self::$instance === null) {
-            throw new \RuntimeException('Driver not initialized');
-        }
-
-        // Return your driver's client/connection
-        return self::$instance->getConnection($connection);
+        $configFileName = $configFileName ?? 'kipchak.myconfignamefordriver';
+        // Add some logic
+        // Set driver in the container
+        self::$container->set('drivers.mydriver', function (ContainerInterface $c) use ($configFileName): SomeDriver {
+            // Do whatever needs doing and return the driver instance
+            
+            return SomeDriver;
+        });
+            
     }
 
-    private function __construct(ContainerInterface $container)
+    public static function get(?string $configKey = null): Client
     {
-        $this->container = $container;
-        $this->config = $container->get('config')->get('your-driver') ?? [];
-
-        // Initialize your driver logic here
+        // Use $configKey if your config file allows for multiple instances, for example a connection to multiple s3 buckets for doctrine entity managers
+        return self::$container->get('drivers.mydriver.' . $configKey ?? 'default');
     }
 
-    private function getConnection(string $name): mixed
-    {
-        // Return connection/client instance
-        return $this->connections[$name] ?? null;
-    }
 }
+
 ```
 
 Then initialize it in `drivers/drivers.php`:
 
 ```php
-\YourApp\Drivers\CustomDriver::initialise($container);
+\YourApp\Drivers\Driver::initialise($container);
 ```
 
 ## Working with Middleware
@@ -361,11 +350,12 @@ Then add it to `middlewares/middlewares.php`:
 
 All drivers and middleware are configured through PHP files in the `config/` directory:
 
-- `kipchak.api.php` - API settings (name, debug mode, logging)
-- `kipchak.doctrine.php` - MySQL/Database settings
-- `kipchak.couchdb.php` - CouchDB connection configuration
-- `kipchak.memcached.php` - Memcached settings
-- `kipchak.auth.php` - Authentication settings
+- `kipchak.api.php` - API settings (name, debug mode, logging). **This file is mandatory.**
+- `kipchak.doctrine.php` - MySQL/Database settings. Default location for kipchak/driver-doctrine.
+- `kipchak.couchdb.php` - CouchDB connection configuration. Default location for kipchak/driver-couchdb.
+- `kipchak.memcached.php` - Memcached settings. Default location for kipchak/driver-memcached.
+- `kipchak.auth.php` - Authentication settings. Default location for kipchak/middleware-auth.
+- `kipchak.subash.php` - WAF settings. Default location for kipchak/middleware-subash.
 
 See the documentation for each driver or middleware for more configuration options.
 

@@ -2026,7 +2026,7 @@
             "source": {
                 "type": "git",
                 "url": "https://1x.ax/mamluk/kipchak/core",
-                "reference": "cd2848c60f5158d3983a3a7b2033bd2ef62efbd6"
+                "reference": "0f281087fc476a80864b4aa8bcb73a320c150da3"
             },
             "require": {
                 "cuyz/valinor": "^1.17",
@@ -2055,7 +2055,7 @@
                 "apis",
                 "microservices"
             ],
-            "time": "2025-12-24T11:11:58+00:00"
+            "time": "2025-12-25T08:02:10+00:00"
         },
         {
             "name": "kipchak/driver-config",
@@ -2063,7 +2063,7 @@
             "source": {
                 "type": "git",
                 "url": "https://1x.ax/mamluk/kipchak/drivers/config",
-                "reference": "b3ff374495e99128905e4ce7ab0d9cb98ae105ae"
+                "reference": "b3c2bd569b3992be0cfdd25a483fbc54b5e96530"
             },
             "require": {
                 "kipchak/core": "2.x-dev"
@@ -2088,7 +2088,7 @@
                 "http",
                 "microservices"
             ],
-            "time": "2025-12-24T10:17:01+00:00"
+            "time": "2025-12-25T08:25:20+00:00"
         },
         {
             "name": "kipchak/driver-couchdb",
@@ -2096,7 +2096,7 @@
             "source": {
                 "type": "git",
                 "url": "https://1x.ax/mamluk/kipchak/drivers/couchdb",
-                "reference": "fc7483cc8ae6bfd686fb11c10bedcbf132ca402c"
+                "reference": "9df7ab0c607763a66193f0ab6efc3938d771125b"
             },
             "require": {
                 "kipchak/core": "2.x-dev",
@@ -2122,7 +2122,7 @@
                 "couchdb",
                 "microservices"
             ],
-            "time": "2025-12-24T08:00:16+00:00"
+            "time": "2025-12-25T08:59:01+00:00"
         },
         {
             "name": "kipchak/driver-doctrine",
@@ -2130,7 +2130,7 @@
             "source": {
                 "type": "git",
                 "url": "https://1x.ax/mamluk/kipchak/drivers/doctrine",
-                "reference": "c1d8331a9c21b79bf739cb6a2ff9934839ad183d"
+                "reference": "590fec9695bc0346c8a29d674645b7211d672452"
             },
             "require": {
                 "doctrine/orm": "^4",
@@ -2161,7 +2161,7 @@
                 "orm",
                 "pgsql"
             ],
-            "time": "2025-12-24T10:14:03+00:00"
+            "time": "2025-12-25T09:02:42+00:00"
         },
         {
             "name": "kipchak/driver-filecache",
@@ -2169,7 +2169,7 @@
             "source": {
                 "type": "git",
                 "url": "https://1x.ax/mamluk/kipchak/drivers/filecache",
-                "reference": "87e2f4a1caefbfebc7d9f3d93783892439552e61"
+                "reference": "53aec9c20d547ade91681867b74683df8b6bcd42"
             },
             "require": {
                 "kipchak/core": "2.x-dev",
@@ -2195,7 +2195,7 @@
                 "http",
                 "microservices"
             ],
-            "time": "2025-12-24T10:18:08+00:00"
+            "time": "2025-12-25T08:24:29+00:00"
         },
         {
             "name": "kipchak/driver-http",
@@ -2203,7 +2203,7 @@
             "source": {
                 "type": "git",
                 "url": "https://1x.ax/mamluk/kipchak/drivers/http",
-                "reference": "f15dd2ffe44739155e592097630ac6333b3cc6a4"
+                "reference": "a3f089fa0084b91c9af38e940ddffe89021e96a9"
             },
             "require": {
                 "guzzlehttp/guzzle": "^7.10",
@@ -2229,7 +2229,7 @@
                 "http",
                 "microservices"
             ],
-            "time": "2025-12-24T10:16:23+00:00"
+            "time": "2025-12-25T08:25:41+00:00"
         },
         {
             "name": "kipchak/driver-logger",
@@ -2237,7 +2237,7 @@
             "source": {
                 "type": "git",
                 "url": "https://1x.ax/mamluk/kipchak/drivers/logger",
-                "reference": "3b89685c3207f12503d447f5dd64a47d45d0e35d"
+                "reference": "36905135e20457c0cb7550b2033abb26cf1d07b3"
             },
             "require": {
                 "kipchak/core": "2.x-dev",
@@ -2264,7 +2264,7 @@
                 "http",
                 "microservices"
             ],
-            "time": "2025-12-24T10:13:39+00:00"
+            "time": "2025-12-25T08:26:08+00:00"
         },
         {
             "name": "kipchak/driver-memcached",
@@ -2272,11 +2272,12 @@
             "source": {
                 "type": "git",
                 "url": "https://1x.ax/mamluk/kipchak/drivers/memcached",
-                "reference": "f1928dcd3066bbf3fa5d5e5a2ee736d469b7c6ff"
+                "reference": "7c65ce2a968a528b2a2b7dadaeee4d67eea1f597"
             },
             "require": {
                 "ext-memcached": "*",
                 "kipchak/core": "2.x-dev",
+                "kipchak/driver-config": "dev-master",
                 "symfony/cache": "^6.4"
             },
             "default-branch": true,
@@ -2298,7 +2299,7 @@
                 "memcached",
                 "microservices"
             ],
-            "time": "2025-12-24T10:14:47+00:00"
+            "time": "2025-12-25T09:08:25+00:00"
         },
         {
             "name": "kipchak/middleware-auth",
