@@ -13,6 +13,7 @@ return [
             'email',
             'profile'
         ],
+        // Heade checked hear is "Bearer: "
     ],
     'key' => [
         'enabled' => false, // Will check for key in key query parameter (?key=xxxxxxx) or x-api-key header globally
@@ -25,6 +26,8 @@ return [
             'key1' => 'client1',
             'key2' => 'client2',
             'key3' => 'client3'
-        ]
+        ],
+        'header' => 'apikey',
+        'query_param' => 'apikey'
     ]
 ];
