@@ -1,8 +1,8 @@
 <?php
 
 use Api\Controllers;
-use Kipchak\Middleware\Auth\Handlers\AuthJwks;
-use Kipchak\Middleware\Auth\Handlers\AuthKey;
+use Kipchak\Middleware\Auth\JWKS\Handlers\AuthJWKS;
+use Kipchak\Middleware\Auth\Key\Handlers\ApiKey;
 use Slim\Routing\RouteCollectorProxy;
 
 $app->group('/v1', function(RouteCollectorProxy $group) {
@@ -14,7 +14,7 @@ $app->group('/v1', function(RouteCollectorProxy $group) {
         ]
     );
 
-})->add(new AuthJwks($app->getContainer(), ['email']));
+})->add(new AuthJWKS($app->getContainer(), ['email']));
 
 $app->group('/v1', function(RouteCollectorProxy $group) {
 
@@ -25,4 +25,4 @@ $app->group('/v1', function(RouteCollectorProxy $group) {
         ]
     );
 
-})->add(new AuthKey($app->getContainer()));
+})->add(new ApiKey($app->getContainer()));
