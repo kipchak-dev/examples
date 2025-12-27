@@ -18,6 +18,7 @@ return [
         'default_limit' => 3,  // requests per window
         'default_window' => 5,  // seconds
         'store' => 'memcached', // memcached or file
+        'memcached_pool' => 'cache', // Only used if store is memcached
     ],
 
     // Whitelist rules - bypass all other checks if conditions match

@@ -16,7 +16,7 @@
 
 # Kipchak Starter Project
 
-This is a starter project based on Kipchak Core 2.x (https://1.ax/mamluk/kipchak/core/~files/2.x) - an API Development Kit (ADK) built on top of Slim Framework (https://www.slimframework.com/) designed for rapid API development.
+This is a starter project based on Kipchak Core 2.x (https://1.ax/mamluk/kipchak/core) - an API Development Kit (ADK) built on top of Slim Framework (https://www.slimframework.com/) designed for rapid API development.
 
 Kipchak 2.x introduces a modular architecture with drivers and middleware as separate, composable packages, making it lightweight and extensible. This starter demonstrates all the features of Kipchak, which are configurable via PHP files in the config folder. It provides an opinionated structure for building APIs while maintaining full compatibility with vanilla Slim Framework.
 
@@ -24,7 +24,7 @@ Kipchak 2.x introduces a modular architecture with drivers and middleware as sep
 Run this command from the directory to create a starter Kipchak API from the starter.
 
 ```
-composer create-project kipchak/starter [api-name] -s dev
+composer create-project kipchak/starter [api-name]
 ```
 
 Replace ```[api-name]``` with the desired directory name for your new application.

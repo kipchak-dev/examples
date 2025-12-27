@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e7e451213c44ae7e1742bc7ef739bd2c",
+    "content-hash": "943ac9ea41d5021db61a807fe8bdcd01",
     "packages": [
         {
             "name": "carbonphp/carbon-doctrine-types",
@@ -2022,7 +2022,7 @@
         },
         {
             "name": "kipchak/core",
-            "version": "2.x-dev",
+            "version": "2.0",
             "source": {
                 "type": "git",
                 "url": "https://1x.ax/mamluk/kipchak/core",
@@ -2059,16 +2059,15 @@
         },
         {
             "name": "kipchak/driver-config",
-            "version": "dev-master",
+            "version": "1.0",
             "source": {
                 "type": "git",
                 "url": "https://1x.ax/mamluk/kipchak/drivers/config",
-                "reference": "20867eb0bdf56da07e60de8e52372a91f883c7f7"
+                "reference": "2b6ca0d5edf001c7e4836b0e4a1c170c28e7ccd9"
             },
             "require": {
-                "kipchak/core": "2.x-dev"
+                "kipchak/core": "^2"
             },
-            "default-branch": true,
             "type": "middleware",
             "autoload": {
                 "psr-4": {
@@ -2088,22 +2087,21 @@
                 "http",
                 "microservices"
             ],
-            "time": "2025-12-25T09:56:25+00:00"
+            "time": "2025-12-27T03:47:52+00:00"
         },
         {
             "name": "kipchak/driver-couchdb",
-            "version": "dev-master",
+            "version": "1.0",
             "source": {
                 "type": "git",
                 "url": "https://1x.ax/mamluk/kipchak/drivers/couchdb",
-                "reference": "ca9c92c5ead7df68bd5cedcb7a24e66c92f620f9"
+                "reference": "b1cb170ac9eb8f7c9b70b0814da52ad904ca9a0f"
             },
             "require": {
-                "kipchak/core": "2.x-dev",
-                "kipchak/driver-logger": "dev-master",
+                "kipchak/core": "^2",
+                "kipchak/driver-logger": "^1",
                 "mamluk/couchdb": "^0.8"
             },
-            "default-branch": true,
             "type": "middleware",
             "autoload": {
                 "psr-4": {
@@ -2122,25 +2120,24 @@
                 "couchdb",
                 "microservices"
             ],
-            "time": "2025-12-25T10:14:43+00:00"
+            "time": "2025-12-27T04:10:45+00:00"
         },
         {
             "name": "kipchak/driver-doctrine",
-            "version": "dev-master",
+            "version": "1.0",
             "source": {
                 "type": "git",
                 "url": "https://1x.ax/mamluk/kipchak/drivers/doctrine",
-                "reference": "da38a8381bbcae2beb187ab6eb7f20cad5f67ca0"
+                "reference": "1037161f6b639cc95d1f963e10053eea9b98a795"
             },
             "require": {
                 "doctrine/orm": "^4",
-                "kipchak/core": "2.x-dev",
-                "kipchak/driver-filecache": "dev-master",
-                "kipchak/driver-logger": "dev-master",
-                "kipchak/driver-memcached": "dev-master"
+                "kipchak/core": "^2",
+                "kipchak/driver-filecache": "^1",
+                "kipchak/driver-logger": "^1",
+                "kipchak/driver-memcached": "^1"
             },
-            "default-branch": true,
-            "type": "middleware",
+            "type": "driver",
             "autoload": {
                 "psr-4": {
                     "Kipchak\\Driver\\Doctrine\\": "src/"
@@ -2150,7 +2147,7 @@
             "license": [
                 "MIT"
             ],
-            "description": "A Kipchak Doctrine driver (dependency) for the Kipchak API Development Kit (ADK)",
+            "description": "A Doctrine driver (dependency) for the Kipchak API Development Kit (ADK)",
             "homepage": "https://mamluk.net",
             "keywords": [
                 "Mamluk",
@@ -2161,21 +2158,20 @@
                 "orm",
                 "pgsql"
             ],
-            "time": "2025-12-25T10:22:31+00:00"
+            "time": "2025-12-27T04:17:59+00:00"
         },
         {
             "name": "kipchak/driver-filecache",
-            "version": "dev-master",
+            "version": "1.0",
             "source": {
                 "type": "git",
                 "url": "https://1x.ax/mamluk/kipchak/drivers/filecache",
-                "reference": "1231fcf6ecdb967d3a7726fff14b4d8734f958a5"
+                "reference": "c9f4d2eebb3ae1cacc9b643afd26e4f8637c956c"
             },
             "require": {
-                "kipchak/core": "2.x-dev",
+                "kipchak/core": "^2",
                 "symfony/cache": "^8"
             },
-            "default-branch": true,
             "type": "dependency",
             "autoload": {
                 "psr-4": {
@@ -2195,22 +2191,21 @@
                 "http",
                 "microservices"
             ],
-            "time": "2025-12-26T06:20:17+00:00"
+            "time": "2025-12-27T03:59:44+00:00"
         },
         {
             "name": "kipchak/driver-http",
-            "version": "dev-master",
+            "version": "1.0",
             "source": {
                 "type": "git",
                 "url": "https://1x.ax/mamluk/kipchak/drivers/http",
-                "reference": "15f8f9f6b984b7076edb6b3ec776434761c219f0"
+                "reference": "f0e8e0bfb99a5d088e98cb59ccf58ccf2cc1ec35"
             },
             "require": {
                 "guzzlehttp/guzzle": "^7.10",
                 "illuminate/http": "^12.40",
-                "kipchak/core": "2.x-dev"
+                "kipchak/core": "2"
             },
-            "default-branch": true,
             "type": "middleware",
             "autoload": {
                 "psr-4": {
@@ -2229,22 +2224,21 @@
                 "http",
                 "microservices"
             ],
-            "time": "2025-12-25T10:03:12+00:00"
+            "time": "2025-12-27T03:49:42+00:00"
         },
         {
             "name": "kipchak/driver-logger",
-            "version": "dev-master",
+            "version": "1.0",
             "source": {
                 "type": "git",
                 "url": "https://1x.ax/mamluk/kipchak/drivers/logger",
-                "reference": "110b161cfeb20ebe6bcf44220e8755ab7951e222"
+                "reference": "48a49665d65c30e166c0977372aa224275abcc76"
             },
             "require": {
-                "kipchak/core": "2.x-dev",
-                "kipchak/driver-config": "dev-master",
+                "kipchak/core": "^2",
+                "kipchak/driver-config": "^1",
                 "monolog/monolog": "^3.9"
             },
-            "default-branch": true,
             "type": "driver",
             "autoload": {
                 "psr-4": {
@@ -2264,23 +2258,22 @@
                 "http",
                 "microservices"
             ],
-            "time": "2025-12-25T10:01:36+00:00"
+            "time": "2025-12-27T03:56:30+00:00"
         },
         {
             "name": "kipchak/driver-memcached",
-            "version": "dev-master",
+            "version": "1.0",
             "source": {
                 "type": "git",
                 "url": "https://1x.ax/mamluk/kipchak/drivers/memcached",
-                "reference": "bb55990b8c25b18e549b1abd4472a19afbad2959"
+                "reference": "80f42b465d28d9b8ab77e21a41ff24c8c94172f2"
             },
             "require": {
                 "ext-memcached": "*",
-                "kipchak/core": "2.x-dev",
-                "kipchak/driver-config": "dev-master",
+                "kipchak/core": "^2",
+                "kipchak/driver-config": "^1",
                 "symfony/cache": "^8"
             },
-            "default-branch": true,
             "type": "middleware",
             "autoload": {
                 "psr-4": {
@@ -2299,61 +2292,89 @@
                 "memcached",
                 "microservices"
             ],
-            "time": "2025-12-26T06:19:52+00:00"
+            "time": "2025-12-27T04:05:15+00:00"
         },
         {
-            "name": "kipchak/middleware-auth",
-            "version": "dev-master",
+            "name": "kipchak/middleware-auth-jwks",
+            "version": "1.0",
             "source": {
                 "type": "git",
-                "url": "https://1x.ax/mamluk/kipchak/middlewares/auth",
-                "reference": "417d6f22cd5832ce6a9e7c7e34a922ae65a134ab"
+                "url": "https://1x.ax/mamluk/kipchak/middlewares/auth-jwks",
+                "reference": "5df1a50af30411d96881f8f3195e63e34e01cdd7"
             },
             "require": {
                 "firebase/php-jwt": "^7",
-                "kipchak/core": "2.x-dev",
-                "kipchak/driver-config": "dev-master",
-                "kipchak/driver-filecache": "dev-master",
-                "kipchak/driver-logger": "dev-master"
+                "kipchak/core": "^2",
+                "kipchak/driver-config": "^1",
+                "kipchak/driver-filecache": "^1",
+                "kipchak/driver-logger": "^1"
             },
-            "default-branch": true,
             "type": "middleware",
             "autoload": {
                 "psr-4": {
-                    "Kipchak\\Middleware\\Auth\\": "src/"
+                    "Kipchak\\Middleware\\Auth\\JWKS\\": "src/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "MIT"
             ],
-            "description": "The Official Auth Middleware for the Kipchak API Development Kit (ADK)",
+            "description": "The Official JWKS Auth Middleware for the Kipchak API Development Kit (ADK)",
             "homepage": "https://mamluk.net",
             "keywords": [
-                "JWKS",
                 "Mamluk",
-                "api keys",
                 "apis",
-                "authn",
-                "authz",
                 "http",
                 "microservices"
             ],
-            "time": "2025-12-26T05:50:29+00:00"
+            "time": "2025-12-27T04:30:13+00:00"
+        },
+        {
+            "name": "kipchak/middleware-auth-key",
+            "version": "1.0",
+            "source": {
+                "type": "git",
+                "url": "https://1x.ax/mamluk/kipchak/middlewares/auth-key",
+                "reference": "fa158c519eb689b70abbea9a71fae2410a0d31f0"
+            },
+            "require": {
+                "kipchak/core": "^2",
+                "kipchak/driver-config": "^1",
+                "kipchak/driver-logger": "^1"
+            },
+            "type": "middleware",
+            "autoload": {
+                "psr-4": {
+                    "Kipchak\\Middleware\\Auth\\Key\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "The Official API Key Auth Middleware for the Kipchak API Development Kit (ADK)",
+            "homepage": "https://mamluk.net",
+            "keywords": [
+                "Mamluk",
+                "api keys",
+                "apis",
+                "http",
+                "microservices"
+            ],
+            "time": "2025-12-27T04:32:17+00:00"
         },
         {
             "name": "kipchak/middleware-error",
-            "version": "dev-master",
+            "version": "1.0",
             "source": {
                 "type": "git",
                 "url": "https://1x.ax/mamluk/kipchak/middlewares/error",
-                "reference": "bfb9daefc6e94847b78f283b8c95b13905f98dd2"
+                "reference": "24e96d6c2f82f373b1ce57a2b8e07cb5253fc8ca"
             },
             "require": {
-                "kipchak/core": "2.x-dev",
-                "kipchak/driver-config": "dev-master"
+                "kipchak/core": "^2",
+                "kipchak/driver-config": "^1"
             },
-            "default-branch": true,
             "type": "middleware",
             "autoload": {
                 "psr-4": {
@@ -2372,25 +2393,24 @@
                 "http",
                 "microservices"
             ],
-            "time": "2025-12-25T10:15:18+00:00"
+            "time": "2025-12-27T04:23:05+00:00"
         },
         {
             "name": "kipchak/middleware-subashi",
-            "version": "dev-master",
+            "version": "1.0",
             "source": {
                 "type": "git",
                 "url": "https://1x.ax/mamluk/kipchak/middlewares/subashi",
-                "reference": "0fe212b381e1fe993427806888098e9df4b3317e"
+                "reference": "b54e281a21f87217a22c39b882a07e7bd20e2757"
             },
             "require": {
                 "firebase/php-jwt": "^7",
-                "kipchak/core": "2.x-dev",
-                "kipchak/driver-config": "dev-master",
-                "kipchak/driver-filecache": "dev-master",
-                "kipchak/driver-logger": "dev-master",
-                "kipchak/driver-memcached": "dev-master"
+                "kipchak/core": "^2",
+                "kipchak/driver-config": "^1",
+                "kipchak/driver-filecache": "^1",
+                "kipchak/driver-logger": "^1",
+                "kipchak/driver-memcached": "^1"
             },
-            "default-branch": true,
             "type": "middleware",
             "autoload": {
                 "psr-4": {
@@ -2413,7 +2433,7 @@
                 "http",
                 "microservices"
             ],
-            "time": "2025-12-26T06:29:05+00:00"
+            "time": "2025-12-27T04:27:21+00:00"
         },
         {
             "name": "laravel/serializable-closure",
@@ -7996,18 +8016,7 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "kipchak/core": 20,
-        "kipchak/driver-couchdb": 20,
-        "kipchak/driver-doctrine": 20,
-        "kipchak/driver-filecache": 20,
-        "kipchak/driver-http": 20,
-        "kipchak/driver-logger": 20,
-        "kipchak/driver-memcached": 20,
-        "kipchak/middleware-auth": 20,
-        "kipchak/middleware-error": 20,
-        "kipchak/middleware-subashi": 20
-    },
+    "stability-flags": {},
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
