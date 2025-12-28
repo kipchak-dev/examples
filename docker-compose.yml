@@ -6,9 +6,11 @@ services:
     links:
       - memcached
       - mysql
+      - rabbitmq
     depends_on:
       - memcached
       - mysql
+      - rabbitmq
     environment:
       DEBUG: "true" # Any value equals true. To turn off debug mode, comment or delete this env var.
       COUCHDB_HOST: "http://couchdb"
@@ -20,6 +22,10 @@ services:
       DB_PORT: "3306"
       MEMCACHED_HOST: "memcached"
       MEMCACHED_PORT: 11211
+      RABBITMQ_HOST: "rabbitmq"
+      RABBITMQ_PORT: "5672"
+      RABBITMQ_USERNAME: "kipchak"
+      RABBITMQ_PASSWORD: "kipchak"
     ports:
       - "80:80"
       - "2019:2019"
@@ -53,3 +59,15 @@ services:
     image: memcached:1.6
     container_name: memcached
 
+  rabbitmq:
+    image: rabbitmq:4.0.7-management
+    hostname: rabbitmq
+    volumes:
+      - ./etc/rabbitmq/rabbitmq.conf:/etc/rabbitmq/rabbitmq.conf
+    environment:
+      RABBITMQ_DEFAULT_USER: kipchak
+      RABBITMQ_DEFAULT_PASS: kipchak
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    container_name: rabbitmq

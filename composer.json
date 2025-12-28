@@ -13,6 +13,7 @@
         "kipchak/driver-filecache": "^1",
         "kipchak/driver-doctrine": "^1",
         "kipchak/driver-logger": "^1",
+        "kipchak/driver-rabbitmq": "^1",
         "kipchak/middleware-error": "^1",
         "kipchak/middleware-auth-key": "^1",
         "kipchak/middleware-auth-jwks": "^1",
