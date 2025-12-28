@@ -5,8 +5,8 @@ use Doctrine\ORM\Tools\Console\EntityManagerProvider\SingleManagerProvider;
 use Kipchak\Core\Api;
 use Slim\App;
 use Psr\Container\ContainerInterface;
-use Kipchak\Driver\Config\Driver as Config;
-use Kipchak\Driver\Doctrine\Driver as Doctrine;
+use Kipchak\Driver\Config\Config as Config;
+use Kipchak\Driver\Doctrine\Doctrine as Doctrine;
 
 require_once (realpath(__DIR__ . '/../vendor/autoload.php'));
 
