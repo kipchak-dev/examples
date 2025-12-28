@@ -2401,10 +2401,9 @@
             "source": {
                 "type": "git",
                 "url": "https://1x.ax/mamluk/kipchak/middlewares/subashi",
-                "reference": "b54e281a21f87217a22c39b882a07e7bd20e2757"
+                "reference": "515111ae391f132e00d86300827d8cbea9c5934d"
             },
             "require": {
-                "firebase/php-jwt": "^7",
                 "kipchak/core": "^2",
                 "kipchak/driver-config": "^1",
                 "kipchak/driver-filecache": "^1",
@@ -2433,7 +2432,7 @@
                 "http",
                 "microservices"
             ],
-            "time": "2025-12-27T04:27:21+00:00"
+            "time": "2025-12-28T05:48:36+00:00"
         },
         {
             "name": "laravel/serializable-closure",
