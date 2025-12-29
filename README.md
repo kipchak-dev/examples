@@ -1,16 +1,4 @@
-[version-badge]: https://poser.pugx.org/mamluk/kipchak-template/v
-[downloads-badge]: https://poser.pugx.org/mamluk/kipchak-template/downloads
-[unstable-badge]: https://poser.pugx.org/mamluk/kipchak-template/v/unstable
-[license-badge]: https://poser.pugx.org/mamluk/kipchak-template/license
-[php-badge]: https://poser.pugx.org/mamluk/kipchak-template/require/php
-[packagist-url]: https://packagist.org/packages/mamluk/kipchak-template
-[slim-url]: https://www.slimframework.com/
-
-![Version][version-badge]
-![Downloads][downloads-badge]
-![Unstable][unstable-badge]
-![License][license-badge]
-![PHP Version][php-badge]
+[![Latest Stable Version](http://poser.pugx.org/kipchak/starter/v)](https://packagist.org/packages/kipchak/starter) [![Total Downloads](http://poser.pugx.org/kipchak/starter/downloads)](https://packagist.org/packages/kipchak/starter) [![Latest Unstable Version](http://poser.pugx.org/kipchak/starter/v/unstable)](https://packagist.org/packages/kipchak/starter) [![License](http://poser.pugx.org/kipchak/starter/license)](https://packagist.org/packages/kipchak/starter) [![PHP Version Require](http://poser.pugx.org/kipchak/starter/require/php)](https://packagist.org/packages/kipchak/starter)
 
 <img src="https://1x.ax/mamluk/kipchak/core/~raw/master/.mamluk/logo.svg" alt="Kipchak by Mamluk Starter Project" title="Kipchak by Mamluk Starter Project" />
 

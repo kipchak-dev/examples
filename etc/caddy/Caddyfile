@@ -43,7 +43,7 @@
 	#}
 
 	root {$SERVER_ROOT}
-	encode zstd br gzip
+	encode
 
 	# Uncomment the following lines to enable Mercure and Vulcain modules
 	#mercure {
