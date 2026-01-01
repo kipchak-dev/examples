@@ -2,7 +2,7 @@
 use Api\Controllers;
 
 /**
- * @var \Slim\App $app
+ * @var \Kipchak\Core\Components\App $app
  */
 $app->get('/status',
     [
