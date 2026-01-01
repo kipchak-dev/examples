@@ -19,9 +19,6 @@ class Info extends CoreControllers\Base
 
     public function get(ServerRequestInterface $request, ResponseInterface $response, array $args): ResponseInterface
     {
-
-        $this->logger->debug('Dumping info...');
-
         return Http\Response::json($response,
             [
                 'headers' => $request->getHeaders(),
