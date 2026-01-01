@@ -2932,11 +2932,11 @@
         },
         {
             "name": "kipchak/core",
-            "version": "2.5",
+            "version": "2.6",
             "source": {
                 "type": "git",
                 "url": "https://1x.ax/mamluk/kipchak/core",
-                "reference": "fd08752fa23f3837c1ccc6e7d5a9625bf0bc67b4"
+                "reference": "62fb2aa3e0aee9812d46e61cdeb8fe5d64ea3c0e"
             },
             "require": {
                 "cuyz/valinor": "^1.17",
@@ -2965,7 +2965,7 @@
                 "apis",
                 "microservices"
             ],
-            "time": "2026-01-01T04:33:34+00:00"
+            "time": "2026-01-01T04:39:38+00:00"
         },
         {
             "name": "kipchak/driver-config",
@@ -3239,11 +3239,11 @@
         },
         {
             "name": "kipchak/middleware-auth-jwks",
-            "version": "1.0",
+            "version": "1.1",
             "source": {
                 "type": "git",
                 "url": "https://1x.ax/mamluk/kipchak/middlewares/auth-jwks",
-                "reference": "5df1a50af30411d96881f8f3195e63e34e01cdd7"
+                "reference": "5e78e68564a4f6342da9a88ea9e52e61a6f83d00"
             },
             "require": {
                 "firebase/php-jwt": "^7",
@@ -3270,15 +3270,15 @@
                 "http",
                 "microservices"
             ],
-            "time": "2025-12-27T04:30:13+00:00"
+            "time": "2026-01-01T04:42:28+00:00"
         },
         {
             "name": "kipchak/middleware-auth-key",
-            "version": "1.0",
+            "version": "1.1",
             "source": {
                 "type": "git",
                 "url": "https://1x.ax/mamluk/kipchak/middlewares/auth-key",
-                "reference": "fa158c519eb689b70abbea9a71fae2410a0d31f0"
+                "reference": "e3a872e89b875a7b5cc11d4fb85ea1a4b78d7dfc"
             },
             "require": {
                 "kipchak/core": "^2",
@@ -3304,15 +3304,15 @@
                 "http",
                 "microservices"
             ],
-            "time": "2025-12-27T04:32:17+00:00"
+            "time": "2026-01-01T04:42:35+00:00"
         },
         {
             "name": "kipchak/middleware-error",
-            "version": "1.0",
+            "version": "1.1",
             "source": {
                 "type": "git",
                 "url": "https://1x.ax/mamluk/kipchak/middlewares/error",
-                "reference": "24e96d6c2f82f373b1ce57a2b8e07cb5253fc8ca"
+                "reference": "77d1ee931f47bef09b4d94a3e1e8b65c863ce8fa"
             },
             "require": {
                 "kipchak/core": "^2",
@@ -3336,15 +3336,15 @@
                 "http",
                 "microservices"
             ],
-            "time": "2025-12-27T04:23:05+00:00"
+            "time": "2026-01-01T04:42:40+00:00"
         },
         {
             "name": "kipchak/middleware-subashi",
-            "version": "1.0",
+            "version": "1.1",
             "source": {
                 "type": "git",
                 "url": "https://1x.ax/mamluk/kipchak/middlewares/subashi",
-                "reference": "515111ae391f132e00d86300827d8cbea9c5934d"
+                "reference": "e42fb887399006cced3cdaf5cdc13aa54631cd16"
             },
             "require": {
                 "kipchak/core": "^2",
@@ -3375,7 +3375,7 @@
                 "http",
                 "microservices"
             ],
-            "time": "2025-12-28T05:48:36+00:00"
+            "time": "2026-01-01T04:42:43+00:00"
         },
         {
             "name": "laravel/serializable-closure",
