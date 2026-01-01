@@ -3274,11 +3274,11 @@
         },
         {
             "name": "kipchak/middleware-auth-key",
-            "version": "1.1",
+            "version": "1.2",
             "source": {
                 "type": "git",
                 "url": "https://1x.ax/mamluk/kipchak/middlewares/auth-key",
-                "reference": "e3a872e89b875a7b5cc11d4fb85ea1a4b78d7dfc"
+                "reference": "6b7936b20106c29061af783f5c681afdf00067c6"
             },
             "require": {
                 "kipchak/core": "^2",
@@ -3304,7 +3304,7 @@
                 "http",
                 "microservices"
             ],
-            "time": "2026-01-01T04:42:35+00:00"
+            "time": "2026-01-01T10:08:42+00:00"
         },
         {
             "name": "kipchak/middleware-error",
