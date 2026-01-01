@@ -2,8 +2,12 @@ FROM 1x.ax/mamluk/php/8.4:franken-dev
 
 # Copy files
 COPY . /var/www/
-COPY etc/caddy/Caddyfile /etc/frankenphp/
-# COPY etc/caddy/caddy.d/* /etc/frankenphp/Caddyfile.d/
+
+# Leave the below line as it is to run FrankenPHP in Worker Mode
+#COPY etc/caddy/Caddyfile /etc/frankenphp/
+
+# If you do not want FrankenPHP to run in worker mode, uncomment the line below and comment line 7.
+COPY etc/caddy/Caddyfile.nonworker /etc/frankenphp/Caddyfile
 
 # Run Composer
 RUN export COMPOSER_ALLOW_SUPERUSER=1 && cd /var/www && composer install --no-dev
