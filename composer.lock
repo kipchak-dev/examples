@@ -3206,11 +3206,11 @@
         },
         {
             "name": "kipchak/driver-rabbitmq",
-            "version": "1.1",
+            "version": "1.2",
             "source": {
                 "type": "git",
                 "url": "https://1x.ax/mamluk/kipchak/drivers/rabbitmq",
-                "reference": "56691d4a8d7180a0bbc20281e5df0fef823192d2"
+                "reference": "4410faf3b24cf19341206c371762c6bede9b665d"
             },
             "require": {
                 "kipchak/core": "^2",
@@ -3235,7 +3235,7 @@
                 "couchdb",
                 "microservices"
             ],
-            "time": "2025-12-28T10:47:14+00:00"
+            "time": "2026-01-04T07:22:00+00:00"
         },
         {
             "name": "kipchak/middleware-auth-jwks",
