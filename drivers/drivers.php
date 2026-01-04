@@ -26,3 +26,4 @@ Memcached::initialise($container);
 CouchDB::initialise($container);
 Doctrine::initialise($container);
 RabbitMQ::initialise($container);
+\Kipchak\Driver\Git\Git::initialise($container);

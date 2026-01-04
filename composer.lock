@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "de6813cad982cdf01603d55a7bd3accd",
+    "content-hash": "f5ab76e10ad5c685b1eedcaa95f4b69d",
     "packages": [
         {
             "name": "amphp/amp",
@@ -960,6 +960,70 @@
                 }
             ],
             "time": "2025-06-20T06:40:38+00:00"
+        },
+        {
+            "name": "czproject/git-php",
+            "version": "v4.6.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/czproject/git-php.git",
+                "reference": "1f1ecc92aea9ee31120f4f5b759f5aa947420b0a"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/czproject/git-php/zipball/1f1ecc92aea9ee31120f4f5b759f5aa947420b0a",
+                "reference": "1f1ecc92aea9ee31120f4f5b759f5aa947420b0a",
+                "shasum": ""
+            },
+            "require": {
+                "php": "8.0 - 8.5"
+            },
+            "require-dev": {
+                "nette/tester": "^2.5"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Jan Pecha",
+                    "email": "janpecha@email.cz"
+                }
+            ],
+            "description": "Library for work with Git repository in PHP.",
+            "keywords": [
+                "git"
+            ],
+            "support": {
+                "issues": "https://github.com/czproject/git-php/issues",
+                "source": "https://github.com/czproject/git-php/tree/v4.6.0"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/sponsors/janpecha",
+                    "type": "github"
+                },
+                {
+                    "url": "https://www.janpecha.cz/donate/git-php/",
+                    "type": "other"
+                },
+                {
+                    "url": "https://donate.stripe.com/7sIcO2a9maTSg2A9AA",
+                    "type": "stripe"
+                },
+                {
+                    "url": "https://thanks.dev/u/gh/czproject",
+                    "type": "thanks.dev"
+                }
+            ],
+            "time": "2025-11-10T07:24:07+00:00"
         },
         {
             "name": "daverandom/libdns",
@@ -3102,6 +3166,39 @@
                 "microservices"
             ],
             "time": "2025-12-27T03:59:44+00:00"
+        },
+        {
+            "name": "kipchak/driver-git",
+            "version": "1.0",
+            "source": {
+                "type": "git",
+                "url": "https://1x.ax/mamluk/kipchak/drivers/git",
+                "reference": "bcc7e67492d1d0658a7c129291ebf2632e7a8a66"
+            },
+            "require": {
+                "czproject/git-php": "^4.6",
+                "kipchak/core": "^2",
+                "kipchak/driver-logger": "^1"
+            },
+            "type": "middleware",
+            "autoload": {
+                "psr-4": {
+                    "Kipchak\\Driver\\Git\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "A Git driver (dependency) for the Kipchak API Development Kit (ADK)",
+            "homepage": "https://mamluk.net",
+            "keywords": [
+                "Mamluk",
+                "apis",
+                "git",
+                "microservices"
+            ],
+            "time": "2026-01-04T10:10:28+00:00"
         },
         {
             "name": "kipchak/driver-http",
