@@ -11,7 +11,8 @@ return [
     'isSecure' => env('RABBITMQ_IS_SECURE', false),
     'sslVerify' => env('RABBITMQ_SSL_VERIFY', false),
     'queues' => [
-        'queue-name-1',
-        'queue-name-2',
+        // Channel must be a unique integer
+        ['name' => 'queue-name-1', 'channel' => 1],
+        ['name' => 'queue-name-2', 'channel' => 2]
     ]
 ];

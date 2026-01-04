@@ -7,6 +7,7 @@ use Kipchak\Driver\Filecache\Filecache;
 use Kipchak\Driver\Http\Http;
 use Kipchak\Driver\Logger\Logger;
 use \Kipchak\Driver\Memcached\Memcached;
+use Kipchak\Driver\RabbitMQ\RabbitMQ;
 use Psr\Container\ContainerInterface;
 
 /** Initialise any drivers installed or coded in the project over here
@@ -24,3 +25,4 @@ Filecache::initialise($container);
 Memcached::initialise($container);
 CouchDB::initialise($container);
 Doctrine::initialise($container);
+RabbitMQ::initialise($container);
