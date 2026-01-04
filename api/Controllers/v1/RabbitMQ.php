@@ -8,7 +8,6 @@ use Kipchak\Driver\RabbitMQ\RabbitMQ as RabbitMQDriver;
 use PhpAmqpLib\Message\AMQPMessage;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\ServerRequestInterface;
-use Symfony\Contracts\Cache\ItemInterface;
 
 /**
  * All Controllers extending Controllers\Base Contain the Service / DI Container as a protected property called $container.
@@ -54,6 +53,12 @@ class RabbitMQ extends Controllers\Base
         });
 
         // Subscribe will block until the connection is closed so we won't get here.
+        return Http\Response::json($response,
+            [
+                'subscribed' => 'and waiting...',
+            ],
+            200
+        );
 
     }
 
