@@ -4,10 +4,12 @@ use Kipchak\Driver\Config\Config;
 use Kipchak\Driver\CouchDB\CouchDB;
 use Kipchak\Driver\Doctrine\Doctrine;
 use Kipchak\Driver\Filecache\Filecache;
+use Kipchak\Driver\Git\Git;
 use Kipchak\Driver\Http\Http;
 use Kipchak\Driver\Logger\Logger;
 use \Kipchak\Driver\Memcached\Memcached;
 use Kipchak\Driver\RabbitMQ\RabbitMQ;
+use Kipchak\Driver\S3\S3;
 use Psr\Container\ContainerInterface;
 
 /** Initialise any drivers installed or coded in the project over here
@@ -26,4 +28,5 @@ Memcached::initialise($container);
 CouchDB::initialise($container);
 Doctrine::initialise($container);
 RabbitMQ::initialise($container);
-\Kipchak\Driver\Git\Git::initialise($container);
+Git::initialise($container);
+S3::initialise($container);

@@ -15,6 +15,7 @@
         "kipchak/driver-logger": "^1",
         "kipchak/driver-rabbitmq": "^1",
         "kipchak/driver-git": "^1",
+        "kipchak/driver-s3": "^1",
         "kipchak/middleware-error": "^1",
         "kipchak/middleware-auth-key": "^1",
         "kipchak/middleware-auth-jwks": "^1",

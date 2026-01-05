@@ -21,7 +21,7 @@ class Git extends Controllers\Base
     public function get(ServerRequestInterface $request, ResponseInterface $response, array $args): ResponseInterface
     {
 
-        $this->logger->debug('Loading cache');
+        $this->logger->debug('Loading git');
 
         $git  = GitDriver::get('default');
         //$git->getBranches();
