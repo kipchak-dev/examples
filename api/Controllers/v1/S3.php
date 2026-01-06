@@ -31,6 +31,7 @@ class S3 extends Controllers\Base
             $bx[] = $bucket->getName();
         }
 
+
         return Http\Response::json($response,
             [
                 'buckets' => $bx,
