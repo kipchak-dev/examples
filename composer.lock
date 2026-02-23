@@ -3261,11 +3261,11 @@
         },
         {
             "name": "kipchak/driver-couchdb",
-            "version": "1.12",
+            "version": "1.13",
             "source": {
                 "type": "git",
                 "url": "https://1x.ax/mamluk/kipchak/drivers/couchdb",
-                "reference": "ad13faa3ed4e3a318753cc0b255e40b3f60d61ef"
+                "reference": "e8d30e9204d6449ebf0d0160e53781bb961e2486"
             },
             "require": {
                 "kipchak/core": "^2",
@@ -3290,15 +3290,15 @@
                 "couchdb",
                 "microservices"
             ],
-            "time": "2026-02-23T07:43:04+00:00"
+            "time": "2026-02-23T09:14:46+00:00"
         },
         {
             "name": "kipchak/driver-doctrine",
-            "version": "1.17",
+            "version": "1.18",
             "source": {
                 "type": "git",
                 "url": "https://1x.ax/mamluk/kipchak/drivers/doctrine",
-                "reference": "0a2e0861cfd241c42f200d157228d16bebde6357"
+                "reference": "19942d0d1f271f908d94d66be94508e5458ee563"
             },
             "require": {
                 "doctrine/orm": "^4",
@@ -3331,7 +3331,7 @@
                 "orm",
                 "pgsql"
             ],
-            "time": "2026-02-23T07:43:37+00:00"
+            "time": "2026-02-23T09:15:21+00:00"
         },
         {
             "name": "kipchak/driver-filecache",
@@ -3501,11 +3501,11 @@
         },
         {
             "name": "kipchak/driver-rabbitmq",
-            "version": "1.14",
+            "version": "1.15",
             "source": {
                 "type": "git",
                 "url": "https://1x.ax/mamluk/kipchak/drivers/rabbitmq",
-                "reference": "90dd22170f9ea1e1f3d8622c0ead9e068e70849a"
+                "reference": "017079abec65f37fed46fb356e5e014accfffdbf"
             },
             "require": {
                 "kipchak/core": "^2",
@@ -3530,15 +3530,15 @@
                 "couchdb",
                 "microservices"
             ],
-            "time": "2026-02-23T07:43:16+00:00"
+            "time": "2026-02-23T09:14:58+00:00"
         },
         {
             "name": "kipchak/driver-s3",
-            "version": "1.11",
+            "version": "1.12",
             "source": {
                 "type": "git",
                 "url": "https://1x.ax/mamluk/kipchak/drivers/s3",
-                "reference": "aaff26eae500b3e752753e1d14a451120f217f42"
+                "reference": "645fdd8285de03cc02337daeca2da2a5e7d5f13f"
             },
             "require": {
                 "async-aws/simple-s3": "*",
@@ -3564,7 +3564,7 @@
                 "object storage",
                 "s3"
             ],
-            "time": "2026-02-23T07:43:26+00:00"
+            "time": "2026-02-23T09:15:10+00:00"
         },
         {
             "name": "kipchak/middleware-auth-jwks",
