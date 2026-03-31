@@ -1413,16 +1413,16 @@
         },
         {
             "name": "doctrine/dbal",
-            "version": "4.4.2",
+            "version": "4.4.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/dbal.git",
-                "reference": "476f7f0fa6ea4aa5364926db7fabdf6049075722"
+                "reference": "61e730f1658814821a85f2402c945f3883407dec"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/dbal/zipball/476f7f0fa6ea4aa5364926db7fabdf6049075722",
-                "reference": "476f7f0fa6ea4aa5364926db7fabdf6049075722",
+                "url": "https://api.github.com/repos/doctrine/dbal/zipball/61e730f1658814821a85f2402c945f3883407dec",
+                "reference": "61e730f1658814821a85f2402c945f3883407dec",
                 "shasum": ""
             },
             "require": {
@@ -1499,7 +1499,7 @@
             ],
             "support": {
                 "issues": "https://github.com/doctrine/dbal/issues",
-                "source": "https://github.com/doctrine/dbal/tree/4.4.2"
+                "source": "https://github.com/doctrine/dbal/tree/4.4.3"
             },
             "funding": [
                 {
@@ -1515,7 +1515,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-02-26T12:12:19+00:00"
+            "time": "2026-03-20T08:52:12+00:00"
         },
         {
             "name": "doctrine/deprecations",
@@ -2131,16 +2131,16 @@
         },
         {
             "name": "firebase/php-jwt",
-            "version": "v7.0.3",
+            "version": "v7.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/firebase/php-jwt.git",
-                "reference": "28aa0694bcfdfa5e2959c394d5a1ee7a5083629e"
+                "reference": "e41f1bd7dbe3c5455c3f72d4338cfeb083b71931"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/firebase/php-jwt/zipball/28aa0694bcfdfa5e2959c394d5a1ee7a5083629e",
-                "reference": "28aa0694bcfdfa5e2959c394d5a1ee7a5083629e",
+                "url": "https://api.github.com/repos/firebase/php-jwt/zipball/e41f1bd7dbe3c5455c3f72d4338cfeb083b71931",
+                "reference": "e41f1bd7dbe3c5455c3f72d4338cfeb083b71931",
                 "shasum": ""
             },
             "require": {
@@ -2148,6 +2148,7 @@
             },
             "require-dev": {
                 "guzzlehttp/guzzle": "^7.4",
+                "phpfastcache/phpfastcache": "^9.2",
                 "phpspec/prophecy-phpunit": "^2.0",
                 "phpunit/phpunit": "^9.5",
                 "psr/cache": "^2.0||^3.0",
@@ -2188,9 +2189,9 @@
             ],
             "support": {
                 "issues": "https://github.com/firebase/php-jwt/issues",
-                "source": "https://github.com/firebase/php-jwt/tree/v7.0.3"
+                "source": "https://github.com/firebase/php-jwt/tree/v7.0.4"
             },
-            "time": "2026-02-25T22:16:40+00:00"
+            "time": "2026-03-27T21:17:19+00:00"
         },
         {
             "name": "fruitcake/php-cors",
@@ -2677,16 +2678,16 @@
         },
         {
             "name": "illuminate/collections",
-            "version": "v12.54.1",
+            "version": "v12.56.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/collections.git",
-                "reference": "86f874536cbda5f35c23a9908ee7f176caa4496e"
+                "reference": "83313b009c4afb6f02dbc090bdb67809756eefa2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/collections/zipball/86f874536cbda5f35c23a9908ee7f176caa4496e",
-                "reference": "86f874536cbda5f35c23a9908ee7f176caa4496e",
+                "url": "https://api.github.com/repos/illuminate/collections/zipball/83313b009c4afb6f02dbc090bdb67809756eefa2",
+                "reference": "83313b009c4afb6f02dbc090bdb67809756eefa2",
                 "shasum": ""
             },
             "require": {
@@ -2733,11 +2734,11 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2026-02-25T15:25:18+00:00"
+            "time": "2026-03-11T14:13:25+00:00"
         },
         {
             "name": "illuminate/conditionable",
-            "version": "v12.54.1",
+            "version": "v12.56.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/conditionable.git",
@@ -2783,7 +2784,7 @@
         },
         {
             "name": "illuminate/contracts",
-            "version": "v12.54.1",
+            "version": "v12.56.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/contracts.git",
@@ -2831,7 +2832,7 @@
         },
         {
             "name": "illuminate/filesystem",
-            "version": "v12.54.1",
+            "version": "v12.56.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/filesystem.git",
@@ -2898,16 +2899,16 @@
         },
         {
             "name": "illuminate/http",
-            "version": "v12.54.1",
+            "version": "v12.56.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/http.git",
-                "reference": "abc31b8375666820ff2a29ca6f888594573ee8f5"
+                "reference": "9e0cf400cb81333520994952a164c737224ce9f0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/http/zipball/abc31b8375666820ff2a29ca6f888594573ee8f5",
-                "reference": "abc31b8375666820ff2a29ca6f888594573ee8f5",
+                "url": "https://api.github.com/repos/illuminate/http/zipball/9e0cf400cb81333520994952a164c737224ce9f0",
+                "reference": "9e0cf400cb81333520994952a164c737224ce9f0",
                 "shasum": ""
             },
             "require": {
@@ -2956,11 +2957,11 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2026-03-09T14:19:52+00:00"
+            "time": "2026-03-17T18:15:14+00:00"
         },
         {
             "name": "illuminate/macroable",
-            "version": "v12.54.1",
+            "version": "v12.56.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/macroable.git",
@@ -3006,7 +3007,7 @@
         },
         {
             "name": "illuminate/reflection",
-            "version": "v12.54.1",
+            "version": "v12.56.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/reflection.git",
@@ -3057,7 +3058,7 @@
         },
         {
             "name": "illuminate/session",
-            "version": "v12.54.1",
+            "version": "v12.56.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/session.git",
@@ -3114,16 +3115,16 @@
         },
         {
             "name": "illuminate/support",
-            "version": "v12.54.1",
+            "version": "v12.56.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/illuminate/support.git",
-                "reference": "e54208c0b5693becd8d3bec02f07e8db9aa4f512"
+                "reference": "cd8a3c5a95501b9ae0828ac785b5af5ffccdca45"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/illuminate/support/zipball/e54208c0b5693becd8d3bec02f07e8db9aa4f512",
-                "reference": "e54208c0b5693becd8d3bec02f07e8db9aa4f512",
+                "url": "https://api.github.com/repos/illuminate/support/zipball/cd8a3c5a95501b9ae0828ac785b5af5ffccdca45",
+                "reference": "cd8a3c5a95501b9ae0828ac785b5af5ffccdca45",
                 "shasum": ""
             },
             "require": {
@@ -3190,7 +3191,7 @@
                 "issues": "https://github.com/laravel/framework/issues",
                 "source": "https://github.com/laravel/framework"
             },
-            "time": "2026-03-06T15:24:01+00:00"
+            "time": "2026-03-17T13:55:49+00:00"
         },
         {
             "name": "kelunik/certificate",
@@ -3252,11 +3253,11 @@
         },
         {
             "name": "kipchak/core",
-            "version": "2.15",
+            "version": "2.16",
             "source": {
                 "type": "git",
                 "url": "https://1x.ax/mamluk/kipchak/core",
-                "reference": "741762d0fa82cbb7000234bb0d093ad98324a8bc"
+                "reference": "7f8f8bbb7ecfbed2d25eea42ef3e32279344d194"
             },
             "require": {
                 "cuyz/valinor": "^1.17",
@@ -3285,15 +3286,15 @@
                 "apis",
                 "microservices"
             ],
-            "time": "2026-03-15T07:35:09+00:00"
+            "time": "2026-03-31T14:14:36+00:00"
         },
         {
             "name": "kipchak/driver-anthropic",
-            "version": "1.1",
+            "version": "1.3",
             "source": {
                 "type": "git",
                 "url": "https://1x.ax/mamluk/kipchak/drivers/anthropic",
-                "reference": "4cf2b2e7d81a0d239ea86c5dede7665f14cc490b"
+                "reference": "edbf957ba3f0725699c656542bc346f6a1ae5609"
             },
             "require": {
                 "anthropic-ai/sdk": "^0.6",
@@ -3325,15 +3326,15 @@
                 "claude",
                 "microservices"
             ],
-            "time": "2026-03-02T07:41:09+00:00"
+            "time": "2026-03-15T07:37:52+00:00"
         },
         {
             "name": "kipchak/driver-cloudflare-dns",
-            "version": "1.1",
+            "version": "1.3",
             "source": {
                 "type": "git",
                 "url": "https://1x.ax/mamluk/kipchak/drivers/cloudflare-dns",
-                "reference": "0916a2b9a92826d689ea46c286ecc9d73b842a14"
+                "reference": "2db0a41502028b404291448e6f1af221f6451d59"
             },
             "require": {
                 "kipchak/core": "^2",
@@ -3362,15 +3363,15 @@
                 "dns",
                 "microservices"
             ],
-            "time": "2026-03-02T07:41:38+00:00"
+            "time": "2026-03-15T07:38:30+00:00"
         },
         {
             "name": "kipchak/driver-cloudns",
-            "version": "1.1",
+            "version": "1.3",
             "source": {
                 "type": "git",
                 "url": "https://1x.ax/mamluk/kipchak/drivers/cloudns",
-                "reference": "5bc165a30b64b144708849232b1c83232b40ec71"
+                "reference": "bd2e94ffeeb7c762c8aa8fb39b5ba0a3bb54d1ff"
             },
             "require": {
                 "kipchak/core": "^2",
@@ -3399,15 +3400,15 @@
                 "dns",
                 "microservices"
             ],
-            "time": "2026-03-02T07:41:23+00:00"
+            "time": "2026-03-15T07:38:10+00:00"
         },
         {
             "name": "kipchak/driver-config",
-            "version": "1.11",
+            "version": "1.12",
             "source": {
                 "type": "git",
                 "url": "https://1x.ax/mamluk/kipchak/drivers/config",
-                "reference": "2c81495337dc8ff76cffcb73050459ccf6cecac6"
+                "reference": "7538977c010ae1f02bc3c8f740214ca0928a97f5"
             },
             "require": {
                 "kipchak/core": "^2"
@@ -3431,15 +3432,15 @@
                 "http",
                 "microservices"
             ],
-            "time": "2026-03-02T07:38:49+00:00"
+            "time": "2026-03-31T14:14:50+00:00"
         },
         {
             "name": "kipchak/driver-couchdb",
-            "version": "1.16",
+            "version": "1.17",
             "source": {
                 "type": "git",
                 "url": "https://1x.ax/mamluk/kipchak/drivers/couchdb",
-                "reference": "d0adb1e047e36409553fce9e0995a6f6d3e3a9c6"
+                "reference": "6297f46c6d143b5f866e54cc90f55fa4d6daeed9"
             },
             "require": {
                 "kipchak/core": "^2",
@@ -3464,15 +3465,15 @@
                 "couchdb",
                 "microservices"
             ],
-            "time": "2026-03-15T07:36:32+00:00"
+            "time": "2026-03-31T14:16:03+00:00"
         },
         {
             "name": "kipchak/driver-doctrine",
-            "version": "1.23",
+            "version": "1.24",
             "source": {
                 "type": "git",
                 "url": "https://1x.ax/mamluk/kipchak/drivers/doctrine",
-                "reference": "372bfec9a269b3834a64dc59743b0a1ba9a807a5"
+                "reference": "f569d0fc22fb354ecf7b6da0c61d6d92d1bd28cd"
             },
             "require": {
                 "doctrine/orm": "^4",
@@ -3505,15 +3506,15 @@
                 "orm",
                 "pgsql"
             ],
-            "time": "2026-03-15T07:37:09+00:00"
+            "time": "2026-03-31T14:16:42+00:00"
         },
         {
             "name": "kipchak/driver-filecache",
-            "version": "1.10",
+            "version": "1.11",
             "source": {
                 "type": "git",
                 "url": "https://1x.ax/mamluk/kipchak/drivers/filecache",
-                "reference": "a0c507a90155c6d889b1fe598555b13c9b5aac3f"
+                "reference": "fa2367e7fc0dbdfd79182e02a9be8d3f273bf840"
             },
             "require": {
                 "kipchak/core": "^2",
@@ -3538,15 +3539,15 @@
                 "http",
                 "microservices"
             ],
-            "time": "2026-03-15T07:35:40+00:00"
+            "time": "2026-03-31T14:15:12+00:00"
         },
         {
             "name": "kipchak/driver-git",
-            "version": "1.9",
+            "version": "1.10",
             "source": {
                 "type": "git",
                 "url": "https://1x.ax/mamluk/kipchak/drivers/git",
-                "reference": "7c0dbb6928bb60ed4cce987f090695f4463b8e5e"
+                "reference": "ad4145a81058812dd29e112acea460f588341c01"
             },
             "require": {
                 "czproject/git-php": "^4.6",
@@ -3570,15 +3571,15 @@
                 "git",
                 "microservices"
             ],
-            "time": "2026-03-15T07:36:07+00:00"
+            "time": "2026-03-31T14:15:37+00:00"
         },
         {
             "name": "kipchak/driver-http",
-            "version": "1.11",
+            "version": "1.12",
             "source": {
                 "type": "git",
                 "url": "https://1x.ax/mamluk/kipchak/drivers/http",
-                "reference": "27cf6c5b17835deea2554ae6b84128669ee7a719"
+                "reference": "0122248c8b4d975621ec08741233051b29ef0928"
             },
             "require": {
                 "guzzlehttp/guzzle": "^7.10",
@@ -3603,15 +3604,15 @@
                 "http",
                 "microservices"
             ],
-            "time": "2026-03-15T07:35:55+00:00"
+            "time": "2026-03-31T14:15:26+00:00"
         },
         {
             "name": "kipchak/driver-logger",
-            "version": "1.13",
+            "version": "1.14",
             "source": {
                 "type": "git",
                 "url": "https://1x.ax/mamluk/kipchak/drivers/logger",
-                "reference": "07273276a5a195a83d559c798e7599dc1bfcb634"
+                "reference": "f820642e9cee7e5fb857a4fa29c4bc009bed8a15"
             },
             "require": {
                 "kipchak/core": "^2",
@@ -3637,15 +3638,15 @@
                 "http",
                 "microservices"
             ],
-            "time": "2026-03-15T07:35:28+00:00"
+            "time": "2026-03-31T14:15:01+00:00"
         },
         {
             "name": "kipchak/driver-memcached",
-            "version": "1.12",
+            "version": "1.13",
             "source": {
                 "type": "git",
                 "url": "https://1x.ax/mamluk/kipchak/drivers/memcached",
-                "reference": "a41a85a623aafb642debd006b3fb4a8a44613f09"
+                "reference": "e825ed20151159ca714376cdf04ed52c0a37dc4d"
             },
             "require": {
                 "ext-memcached": "*",
@@ -3671,7 +3672,7 @@
                 "memcached",
                 "microservices"
             ],
-            "time": "2026-03-15T07:36:18+00:00"
+            "time": "2026-03-31T14:15:48+00:00"
         },
         {
             "name": "kipchak/driver-openai",
@@ -3713,11 +3714,11 @@
         },
         {
             "name": "kipchak/driver-rabbitmq",
-            "version": "1.18",
+            "version": "1.19",
             "source": {
                 "type": "git",
                 "url": "https://1x.ax/mamluk/kipchak/drivers/rabbitmq",
-                "reference": "0a94e314d7e65da54fcd0a8607cf7ad629575972"
+                "reference": "922821306ae4319a7b650563c022860c36a4a5e2"
             },
             "require": {
                 "kipchak/core": "^2",
@@ -3742,15 +3743,15 @@
                 "couchdb",
                 "microservices"
             ],
-            "time": "2026-03-15T07:36:45+00:00"
+            "time": "2026-03-31T14:16:16+00:00"
         },
         {
             "name": "kipchak/driver-s3",
-            "version": "1.15",
+            "version": "1.16",
             "source": {
                 "type": "git",
                 "url": "https://1x.ax/mamluk/kipchak/drivers/s3",
-                "reference": "ce912b7df6a7bfab55539d1bae5deba39672b4da"
+                "reference": "23a631e58af3b1662c92ed82de407efe224c9b74"
             },
             "require": {
                 "async-aws/simple-s3": "*",
@@ -3776,15 +3777,15 @@
                 "object storage",
                 "s3"
             ],
-            "time": "2026-03-15T07:36:57+00:00"
+            "time": "2026-03-31T14:16:29+00:00"
         },
         {
             "name": "kipchak/middleware-auth-jwks",
-            "version": "1.13",
+            "version": "1.14",
             "source": {
                 "type": "git",
                 "url": "https://1x.ax/mamluk/kipchak/middlewares/auth-jwks",
-                "reference": "c3a83385bbe4eff7518f272c05666f662c6808cf"
+                "reference": "058ee0f22a2f917fe4622ff63a7715786fa5a79a"
             },
             "require": {
                 "firebase/php-jwt": "^7",
@@ -3811,15 +3812,15 @@
                 "http",
                 "microservices"
             ],
-            "time": "2026-03-15T07:39:00+00:00"
+            "time": "2026-03-31T14:18:30+00:00"
         },
         {
             "name": "kipchak/middleware-auth-key",
-            "version": "1.14",
+            "version": "1.15",
             "source": {
                 "type": "git",
                 "url": "https://1x.ax/mamluk/kipchak/middlewares/auth-key",
-                "reference": "f2fc80cc7c06a0f6d577ef78b7bfd4e3c93847b3"
+                "reference": "12f728754e3a18b969f0f7fad3f6e5a1991101a8"
             },
             "require": {
                 "kipchak/core": "^2",
@@ -3845,15 +3846,15 @@
                 "http",
                 "microservices"
             ],
-            "time": "2026-03-15T07:39:11+00:00"
+            "time": "2026-03-31T14:18:41+00:00"
         },
         {
             "name": "kipchak/middleware-error",
-            "version": "1.9",
+            "version": "1.10",
             "source": {
                 "type": "git",
                 "url": "https://1x.ax/mamluk/kipchak/middlewares/error",
-                "reference": "e18a750136f718ce04c78632c8b9831cecb404e8"
+                "reference": "d4c94706393f03be518f7e76f3de961f470d6a3b"
             },
             "require": {
                 "kipchak/core": "^2",
@@ -3877,15 +3878,15 @@
                 "http",
                 "microservices"
             ],
-            "time": "2026-03-15T07:39:22+00:00"
+            "time": "2026-03-31T14:18:52+00:00"
         },
         {
             "name": "kipchak/middleware-subashi",
-            "version": "1.12",
+            "version": "1.13",
             "source": {
                 "type": "git",
                 "url": "https://1x.ax/mamluk/kipchak/middlewares/subashi",
-                "reference": "58184029c78ed336f5af68f18eaf170f04b2898b"
+                "reference": "c3fcee26dc84066e0267775abfa2ee99ac95223d"
             },
             "require": {
                 "kipchak/core": "^2",
@@ -3916,7 +3917,7 @@
                 "http",
                 "microservices"
             ],
-            "time": "2026-03-15T07:39:36+00:00"
+            "time": "2026-03-31T14:19:06+00:00"
         },
         {
             "name": "laravel/serializable-closure",
@@ -3981,20 +3982,20 @@
         },
         {
             "name": "league/uri",
-            "version": "7.8.0",
+            "version": "7.8.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/uri.git",
-                "reference": "4436c6ec8d458e4244448b069cc572d088230b76"
+                "reference": "08cf38e3924d4f56238125547b5720496fac8fd4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/uri/zipball/4436c6ec8d458e4244448b069cc572d088230b76",
-                "reference": "4436c6ec8d458e4244448b069cc572d088230b76",
+                "url": "https://api.github.com/repos/thephpleague/uri/zipball/08cf38e3924d4f56238125547b5720496fac8fd4",
+                "reference": "08cf38e3924d4f56238125547b5720496fac8fd4",
                 "shasum": ""
             },
             "require": {
-                "league/uri-interfaces": "^7.8",
+                "league/uri-interfaces": "^7.8.1",
                 "php": "^8.1",
                 "psr/http-factory": "^1"
             },
@@ -4067,7 +4068,7 @@
                 "docs": "https://uri.thephpleague.com",
                 "forum": "https://thephpleague.slack.com",
                 "issues": "https://github.com/thephpleague/uri-src/issues",
-                "source": "https://github.com/thephpleague/uri/tree/7.8.0"
+                "source": "https://github.com/thephpleague/uri/tree/7.8.1"
             },
             "funding": [
                 {
@@ -4075,20 +4076,20 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-01-14T17:24:56+00:00"
+            "time": "2026-03-15T20:22:25+00:00"
         },
         {
             "name": "league/uri-interfaces",
-            "version": "7.8.0",
+            "version": "7.8.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thephpleague/uri-interfaces.git",
-                "reference": "c5c5cd056110fc8afaba29fa6b72a43ced42acd4"
+                "reference": "85d5c77c5d6d3af6c54db4a78246364908f3c928"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thephpleague/uri-interfaces/zipball/c5c5cd056110fc8afaba29fa6b72a43ced42acd4",
-                "reference": "c5c5cd056110fc8afaba29fa6b72a43ced42acd4",
+                "url": "https://api.github.com/repos/thephpleague/uri-interfaces/zipball/85d5c77c5d6d3af6c54db4a78246364908f3c928",
+                "reference": "85d5c77c5d6d3af6c54db4a78246364908f3c928",
                 "shasum": ""
             },
             "require": {
@@ -4151,7 +4152,7 @@
                 "docs": "https://uri.thephpleague.com",
                 "forum": "https://thephpleague.slack.com",
                 "issues": "https://github.com/thephpleague/uri-src/issues",
-                "source": "https://github.com/thephpleague/uri-interfaces/tree/7.8.0"
+                "source": "https://github.com/thephpleague/uri-interfaces/tree/7.8.1"
             },
             "funding": [
                 {
@@ -4159,7 +4160,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2026-01-15T06:54:53+00:00"
+            "time": "2026-03-08T20:05:35+00:00"
         },
         {
             "name": "mamluk/couchdb",
@@ -5098,16 +5099,16 @@
         },
         {
             "name": "phpseclib/phpseclib",
-            "version": "3.0.49",
+            "version": "3.0.50",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpseclib/phpseclib.git",
-                "reference": "6233a1e12584754e6b5daa69fe1289b47775c1b9"
+                "reference": "aa6ad8321ed103dc3624fb600a25b66ebf78ec7b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpseclib/phpseclib/zipball/6233a1e12584754e6b5daa69fe1289b47775c1b9",
-                "reference": "6233a1e12584754e6b5daa69fe1289b47775c1b9",
+                "url": "https://api.github.com/repos/phpseclib/phpseclib/zipball/aa6ad8321ed103dc3624fb600a25b66ebf78ec7b",
+                "reference": "aa6ad8321ed103dc3624fb600a25b66ebf78ec7b",
                 "shasum": ""
             },
             "require": {
@@ -5188,7 +5189,7 @@
             ],
             "support": {
                 "issues": "https://github.com/phpseclib/phpseclib/issues",
-                "source": "https://github.com/phpseclib/phpseclib/tree/3.0.49"
+                "source": "https://github.com/phpseclib/phpseclib/tree/3.0.50"
             },
             "funding": [
                 {
@@ -5204,7 +5205,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-01-27T09:17:28+00:00"
+            "time": "2026-03-19T02:57:58+00:00"
         },
         {
             "name": "phpstan/phpdoc-parser",
