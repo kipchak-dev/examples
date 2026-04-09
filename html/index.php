@@ -6,6 +6,7 @@ ignore_user_abort(true);
 require_once (realpath(__DIR__ . '/../vendor/autoload.php'));
 
 use Kipchak\Core\Api;
+//use Kipchak\Driver\Doctrine\Doctrine;
 
 // Instantiate Slim, load dependencies and middlewares
 $app = Api::boot();
@@ -15,6 +16,9 @@ $app->addBodyParsingMiddleware();
 
 // Handler outside the loop for better performance (doing less work)
 $handler = static function () use ($app) {
+    // Reset each Doctrine identity map on every request (FrankenPHP worker mode keeps one EM per process)
+    // Doctrine::get('entitymanager.primary')->clear();
+
     /**
      * Tweak these headers as needed, especially if you are going to use this API from a client side SPA
      * without a Backend for Frontend
