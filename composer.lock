@@ -1907,12 +1907,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/orm.git",
-                "reference": "79bff0f072ef177f094812cdc2df382eb82f60ba"
+                "reference": "78ed4cddeb3e79bb7c623861eed3bd15ca35c371"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/orm/zipball/79bff0f072ef177f094812cdc2df382eb82f60ba",
-                "reference": "79bff0f072ef177f094812cdc2df382eb82f60ba",
+                "url": "https://api.github.com/repos/doctrine/orm/zipball/78ed4cddeb3e79bb7c623861eed3bd15ca35c371",
+                "reference": "78ed4cddeb3e79bb7c623861eed3bd15ca35c371",
                 "shasum": ""
             },
             "require": {
@@ -1987,7 +1987,7 @@
                 "issues": "https://github.com/doctrine/orm/issues",
                 "source": "https://github.com/doctrine/orm/tree/4.0.x"
             },
-            "time": "2026-03-12T12:27:37+00:00"
+            "time": "2026-04-09T08:20:54+00:00"
         },
         {
             "name": "doctrine/persistence",
@@ -2143,12 +2143,12 @@
             "version": "v7.0.5",
             "source": {
                 "type": "git",
-                "url": "https://github.com/firebase/php-jwt.git",
+                "url": "https://github.com/googleapis/php-jwt.git",
                 "reference": "47ad26bab5e7c70ae8a6f08ed25ff83631121380"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/firebase/php-jwt/zipball/47ad26bab5e7c70ae8a6f08ed25ff83631121380",
+                "url": "https://api.github.com/repos/googleapis/php-jwt/zipball/47ad26bab5e7c70ae8a6f08ed25ff83631121380",
                 "reference": "47ad26bab5e7c70ae8a6f08ed25ff83631121380",
                 "shasum": ""
             },
@@ -2197,8 +2197,8 @@
                 "php"
             ],
             "support": {
-                "issues": "https://github.com/firebase/php-jwt/issues",
-                "source": "https://github.com/firebase/php-jwt/tree/v7.0.5"
+                "issues": "https://github.com/googleapis/php-jwt/issues",
+                "source": "https://github.com/googleapis/php-jwt/tree/v7.0.5"
             },
             "time": "2026-04-01T20:38:03+00:00"
         },
@@ -3262,11 +3262,11 @@
         },
         {
             "name": "kipchak/core",
-            "version": "2.17",
+            "version": "2.18",
             "source": {
                 "type": "git",
                 "url": "https://1x.ax/mamluk/kipchak/core",
-                "reference": "97a8f829b6db3a9800ade62443a913988756c7c9"
+                "reference": "c81b77634966f6b6c8924823922918610410eb76"
             },
             "require": {
                 "cuyz/valinor": "^1.17",
@@ -3295,15 +3295,15 @@
                 "apis",
                 "microservices"
             ],
-            "time": "2026-04-09T05:44:57+00:00"
+            "time": "2026-04-16T11:41:47+00:00"
         },
         {
             "name": "kipchak/driver-anthropic",
-            "version": "1.3",
+            "version": "1.5",
             "source": {
                 "type": "git",
                 "url": "https://1x.ax/mamluk/kipchak/drivers/anthropic",
-                "reference": "edbf957ba3f0725699c656542bc346f6a1ae5609"
+                "reference": "79586f3217531262a0a0cd7811cb182489aa6c13"
             },
             "require": {
                 "anthropic-ai/sdk": "^0.6",
@@ -3335,15 +3335,15 @@
                 "claude",
                 "microservices"
             ],
-            "time": "2026-03-15T07:37:52+00:00"
+            "time": "2026-04-09T05:48:16+00:00"
         },
         {
             "name": "kipchak/driver-cloudflare-dns",
-            "version": "1.3",
+            "version": "1.5",
             "source": {
                 "type": "git",
                 "url": "https://1x.ax/mamluk/kipchak/drivers/cloudflare-dns",
-                "reference": "2db0a41502028b404291448e6f1af221f6451d59"
+                "reference": "8a4f27fb138cdf6bc6dbb58e71d1ce4dc9a38514"
             },
             "require": {
                 "kipchak/core": "^2",
@@ -3372,7 +3372,7 @@
                 "dns",
                 "microservices"
             ],
-            "time": "2026-03-15T07:38:30+00:00"
+            "time": "2026-04-09T05:48:51+00:00"
         },
         {
             "name": "kipchak/driver-cloudns",
@@ -3413,11 +3413,11 @@
         },
         {
             "name": "kipchak/driver-config",
-            "version": "1.13",
+            "version": "1.14",
             "source": {
                 "type": "git",
                 "url": "https://1x.ax/mamluk/kipchak/drivers/config",
-                "reference": "912601033809f064bdf6215b93243a4d429164b9"
+                "reference": "3c4e606c2a99e77e29f47b84f7359f4c754be215"
             },
             "require": {
                 "kipchak/core": "^2"
@@ -3441,15 +3441,15 @@
                 "http",
                 "microservices"
             ],
-            "time": "2026-04-09T05:45:14+00:00"
+            "time": "2026-04-16T11:42:02+00:00"
         },
         {
             "name": "kipchak/driver-couchdb",
-            "version": "1.18",
+            "version": "1.19",
             "source": {
                 "type": "git",
                 "url": "https://1x.ax/mamluk/kipchak/drivers/couchdb",
-                "reference": "bfe4e6190bb3af4eb544f00f962bd2be1082392d"
+                "reference": "ea4bb4fd7cb171422a6a37094c1113a64e76adc8"
             },
             "require": {
                 "kipchak/core": "^2",
@@ -3474,15 +3474,15 @@
                 "couchdb",
                 "microservices"
             ],
-            "time": "2026-04-09T05:46:43+00:00"
+            "time": "2026-04-16T11:43:16+00:00"
         },
         {
             "name": "kipchak/driver-doctrine",
-            "version": "1.25",
+            "version": "1.26",
             "source": {
                 "type": "git",
                 "url": "https://1x.ax/mamluk/kipchak/drivers/doctrine",
-                "reference": "bc93b8874cf3041f2c6eb41188c6d7e8ef3b0c3a"
+                "reference": "a48ccaf1d5d1e7993ffde02eb6252c457ceed537"
             },
             "require": {
                 "doctrine/orm": "^4",
@@ -3515,15 +3515,15 @@
                 "orm",
                 "pgsql"
             ],
-            "time": "2026-04-09T05:47:28+00:00"
+            "time": "2026-04-16T11:43:55+00:00"
         },
         {
             "name": "kipchak/driver-filecache",
-            "version": "1.12",
+            "version": "1.13",
             "source": {
                 "type": "git",
                 "url": "https://1x.ax/mamluk/kipchak/drivers/filecache",
-                "reference": "ef77ffd8084bdd7c2b7d37c27f5ff19801005c19"
+                "reference": "bdba742947876c4b56bd9a700b5ef60eb429afdf"
             },
             "require": {
                 "kipchak/core": "^2",
@@ -3548,15 +3548,15 @@
                 "http",
                 "microservices"
             ],
-            "time": "2026-04-09T05:45:42+00:00"
+            "time": "2026-04-16T11:42:25+00:00"
         },
         {
             "name": "kipchak/driver-git",
-            "version": "1.11",
+            "version": "1.12",
             "source": {
                 "type": "git",
                 "url": "https://1x.ax/mamluk/kipchak/drivers/git",
-                "reference": "faa397072faa8bf329afe03c7e2647a983ed53a6"
+                "reference": "11df0084b0535e338f997f2202b93ca80451546d"
             },
             "require": {
                 "czproject/git-php": "^4.6",
@@ -3580,15 +3580,15 @@
                 "git",
                 "microservices"
             ],
-            "time": "2026-04-09T05:46:12+00:00"
+            "time": "2026-04-16T11:42:50+00:00"
         },
         {
             "name": "kipchak/driver-http",
-            "version": "1.13",
+            "version": "1.14",
             "source": {
                 "type": "git",
                 "url": "https://1x.ax/mamluk/kipchak/drivers/http",
-                "reference": "7df610757a7ee7d1f36ae4ea352470f41ffad0de"
+                "reference": "5baf125d8ff02179561872a89a03a55cd07ce493"
             },
             "require": {
                 "guzzlehttp/guzzle": "^7.10",
@@ -3613,15 +3613,15 @@
                 "http",
                 "microservices"
             ],
-            "time": "2026-04-09T05:45:58+00:00"
+            "time": "2026-04-16T11:42:39+00:00"
         },
         {
             "name": "kipchak/driver-logger",
-            "version": "1.15",
+            "version": "1.16",
             "source": {
                 "type": "git",
                 "url": "https://1x.ax/mamluk/kipchak/drivers/logger",
-                "reference": "55e055d7cd24e26670feb95731db5dc2148dc263"
+                "reference": "ef3959f8dbbff26780497690450e0e5e199be859"
             },
             "require": {
                 "kipchak/core": "^2",
@@ -3647,15 +3647,15 @@
                 "http",
                 "microservices"
             ],
-            "time": "2026-04-09T05:45:27+00:00"
+            "time": "2026-04-16T11:42:13+00:00"
         },
         {
             "name": "kipchak/driver-memcached",
-            "version": "1.14",
+            "version": "1.15",
             "source": {
                 "type": "git",
                 "url": "https://1x.ax/mamluk/kipchak/drivers/memcached",
-                "reference": "f09695a02be9bec59d9fbdf46283f54f88811720"
+                "reference": "16e3da5b00e6b8b231e86578fbecebd95d6d7aba"
             },
             "require": {
                 "ext-memcached": "*",
@@ -3681,7 +3681,7 @@
                 "memcached",
                 "microservices"
             ],
-            "time": "2026-04-09T05:46:25+00:00"
+            "time": "2026-04-16T11:43:02+00:00"
         },
         {
             "name": "kipchak/driver-openai",
@@ -3723,11 +3723,11 @@
         },
         {
             "name": "kipchak/driver-rabbitmq",
-            "version": "1.20",
+            "version": "1.21",
             "source": {
                 "type": "git",
                 "url": "https://1x.ax/mamluk/kipchak/drivers/rabbitmq",
-                "reference": "f9e81b559cc63d94cbe136e90865da4ae7284816"
+                "reference": "c6468a0938b45f42d426fbe6825b1e76e651749d"
             },
             "require": {
                 "kipchak/core": "^2",
@@ -3752,15 +3752,15 @@
                 "couchdb",
                 "microservices"
             ],
-            "time": "2026-04-09T05:46:59+00:00"
+            "time": "2026-04-16T11:43:30+00:00"
         },
         {
             "name": "kipchak/driver-s3",
-            "version": "1.17",
+            "version": "1.18",
             "source": {
                 "type": "git",
                 "url": "https://1x.ax/mamluk/kipchak/drivers/s3",
-                "reference": "4c34a1d4fbc9343dc2975bb845a5d78d6110af7e"
+                "reference": "65624c22a7cab991cb9e0cd710132e95eb428c77"
             },
             "require": {
                 "async-aws/simple-s3": "*",
@@ -3786,15 +3786,15 @@
                 "object storage",
                 "s3"
             ],
-            "time": "2026-04-09T05:47:13+00:00"
+            "time": "2026-04-16T11:43:42+00:00"
         },
         {
             "name": "kipchak/middleware-auth-jwks",
-            "version": "1.15",
+            "version": "1.16",
             "source": {
                 "type": "git",
                 "url": "https://1x.ax/mamluk/kipchak/middlewares/auth-jwks",
-                "reference": "6247bb830e6724df06d0b36c28627bd097421b18"
+                "reference": "77e4b3ba3d082f5ae48679e7d4f0798e8a361493"
             },
             "require": {
                 "firebase/php-jwt": "^7",
@@ -3821,15 +3821,15 @@
                 "http",
                 "microservices"
             ],
-            "time": "2026-04-09T05:49:25+00:00"
+            "time": "2026-04-16T11:45:37+00:00"
         },
         {
             "name": "kipchak/middleware-auth-key",
-            "version": "1.16",
+            "version": "1.17",
             "source": {
                 "type": "git",
                 "url": "https://1x.ax/mamluk/kipchak/middlewares/auth-key",
-                "reference": "188fa33e65ba5aeedd5063c8451f2226ea752404"
+                "reference": "fb94518e2a2f261ecfcc3762b7a31d144cddf120"
             },
             "require": {
                 "kipchak/core": "^2",
@@ -3855,15 +3855,15 @@
                 "http",
                 "microservices"
             ],
-            "time": "2026-04-09T05:49:38+00:00"
+            "time": "2026-04-16T11:45:49+00:00"
         },
         {
             "name": "kipchak/middleware-error",
-            "version": "1.11",
+            "version": "1.12",
             "source": {
                 "type": "git",
                 "url": "https://1x.ax/mamluk/kipchak/middlewares/error",
-                "reference": "755c6bd88b9b1b56e2eefea2c7673bcdc26da8b5"
+                "reference": "8cec757efa8a738ad7162e6b751d73580e2b8cb8"
             },
             "require": {
                 "kipchak/core": "^2",
@@ -3887,15 +3887,15 @@
                 "http",
                 "microservices"
             ],
-            "time": "2026-04-09T05:49:50+00:00"
+            "time": "2026-04-16T11:46:01+00:00"
         },
         {
             "name": "kipchak/middleware-subashi",
-            "version": "1.14",
+            "version": "1.15",
             "source": {
                 "type": "git",
                 "url": "https://1x.ax/mamluk/kipchak/middlewares/subashi",
-                "reference": "f8a4827612b5836f29eceecbc63c22db9be7d7ab"
+                "reference": "8b02658feb655e15bf822f3aaa6c46acf0a31a42"
             },
             "require": {
                 "kipchak/core": "^2",
@@ -3926,20 +3926,20 @@
                 "http",
                 "microservices"
             ],
-            "time": "2026-04-09T05:50:04+00:00"
+            "time": "2026-04-16T11:46:15+00:00"
         },
         {
             "name": "laravel/serializable-closure",
-            "version": "v2.0.11",
+            "version": "v2.0.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/serializable-closure.git",
-                "reference": "d1af40ac4a6ccc12bd062a7184f63c9995a63bdd"
+                "reference": "a6abb4e54f6fcd3138120b9ad497f0bd146f9919"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/serializable-closure/zipball/d1af40ac4a6ccc12bd062a7184f63c9995a63bdd",
-                "reference": "d1af40ac4a6ccc12bd062a7184f63c9995a63bdd",
+                "url": "https://api.github.com/repos/laravel/serializable-closure/zipball/a6abb4e54f6fcd3138120b9ad497f0bd146f9919",
+                "reference": "a6abb4e54f6fcd3138120b9ad497f0bd146f9919",
                 "shasum": ""
             },
             "require": {
@@ -3987,7 +3987,7 @@
                 "issues": "https://github.com/laravel/serializable-closure/issues",
                 "source": "https://github.com/laravel/serializable-closure"
             },
-            "time": "2026-04-07T13:32:18+00:00"
+            "time": "2026-04-14T13:33:34+00:00"
         },
         {
             "name": "league/uri",
@@ -5108,16 +5108,16 @@
         },
         {
             "name": "phpseclib/phpseclib",
-            "version": "3.0.50",
+            "version": "3.0.51",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpseclib/phpseclib.git",
-                "reference": "aa6ad8321ed103dc3624fb600a25b66ebf78ec7b"
+                "reference": "d59c94077f9c9915abb51ddb52ce85188ece1748"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpseclib/phpseclib/zipball/aa6ad8321ed103dc3624fb600a25b66ebf78ec7b",
-                "reference": "aa6ad8321ed103dc3624fb600a25b66ebf78ec7b",
+                "url": "https://api.github.com/repos/phpseclib/phpseclib/zipball/d59c94077f9c9915abb51ddb52ce85188ece1748",
+                "reference": "d59c94077f9c9915abb51ddb52ce85188ece1748",
                 "shasum": ""
             },
             "require": {
@@ -5198,7 +5198,7 @@
             ],
             "support": {
                 "issues": "https://github.com/phpseclib/phpseclib/issues",
-                "source": "https://github.com/phpseclib/phpseclib/tree/3.0.50"
+                "source": "https://github.com/phpseclib/phpseclib/tree/3.0.51"
             },
             "funding": [
                 {
@@ -5214,7 +5214,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-03-19T02:57:58+00:00"
+            "time": "2026-04-10T01:33:53+00:00"
         },
         {
             "name": "phpstan/phpdoc-parser",
@@ -7334,16 +7334,16 @@
         },
         {
             "name": "symfony/polyfill-ctype",
-            "version": "v1.33.0",
+            "version": "v1.36.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-ctype.git",
-                "reference": "a3cc8b044a6ea513310cbd48ef7333b384945638"
+                "reference": "141046a8f9477948ff284fa65be2095baafb94f2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-ctype/zipball/a3cc8b044a6ea513310cbd48ef7333b384945638",
-                "reference": "a3cc8b044a6ea513310cbd48ef7333b384945638",
+                "url": "https://api.github.com/repos/symfony/polyfill-ctype/zipball/141046a8f9477948ff284fa65be2095baafb94f2",
+                "reference": "141046a8f9477948ff284fa65be2095baafb94f2",
                 "shasum": ""
             },
             "require": {
@@ -7393,7 +7393,7 @@
                 "portable"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-ctype/tree/v1.33.0"
+                "source": "https://github.com/symfony/polyfill-ctype/tree/v1.36.0"
             },
             "funding": [
                 {
@@ -7413,20 +7413,20 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-09-09T11:45:10+00:00"
+            "time": "2026-04-10T16:19:22+00:00"
         },
         {
             "name": "symfony/polyfill-intl-grapheme",
-            "version": "v1.33.0",
+            "version": "v1.36.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-intl-grapheme.git",
-                "reference": "380872130d3a5dd3ace2f4010d95125fde5d5c70"
+                "reference": "ad1b7b9092976d6c948b8a187cec9faaea9ec1df"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-intl-grapheme/zipball/380872130d3a5dd3ace2f4010d95125fde5d5c70",
-                "reference": "380872130d3a5dd3ace2f4010d95125fde5d5c70",
+                "url": "https://api.github.com/repos/symfony/polyfill-intl-grapheme/zipball/ad1b7b9092976d6c948b8a187cec9faaea9ec1df",
+                "reference": "ad1b7b9092976d6c948b8a187cec9faaea9ec1df",
                 "shasum": ""
             },
             "require": {
@@ -7475,7 +7475,7 @@
                 "shim"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-intl-grapheme/tree/v1.33.0"
+                "source": "https://github.com/symfony/polyfill-intl-grapheme/tree/v1.36.0"
             },
             "funding": [
                 {
@@ -7495,11 +7495,11 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-06-27T09:58:17+00:00"
+            "time": "2026-04-10T16:19:22+00:00"
         },
         {
             "name": "symfony/polyfill-intl-idn",
-            "version": "v1.33.0",
+            "version": "v1.36.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-intl-idn.git",
@@ -7562,7 +7562,7 @@
                 "shim"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-intl-idn/tree/v1.33.0"
+                "source": "https://github.com/symfony/polyfill-intl-idn/tree/v1.36.0"
             },
             "funding": [
                 {
@@ -7586,7 +7586,7 @@
         },
         {
             "name": "symfony/polyfill-intl-normalizer",
-            "version": "v1.33.0",
+            "version": "v1.36.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-intl-normalizer.git",
@@ -7647,7 +7647,7 @@
                 "shim"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-intl-normalizer/tree/v1.33.0"
+                "source": "https://github.com/symfony/polyfill-intl-normalizer/tree/v1.36.0"
             },
             "funding": [
                 {
@@ -7671,16 +7671,16 @@
         },
         {
             "name": "symfony/polyfill-mbstring",
-            "version": "v1.33.0",
+            "version": "v1.36.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-mbstring.git",
-                "reference": "6d857f4d76bd4b343eac26d6b539585d2bc56493"
+                "reference": "6a21eb99c6973357967f6ce3708cd55a6bec6315"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/6d857f4d76bd4b343eac26d6b539585d2bc56493",
-                "reference": "6d857f4d76bd4b343eac26d6b539585d2bc56493",
+                "url": "https://api.github.com/repos/symfony/polyfill-mbstring/zipball/6a21eb99c6973357967f6ce3708cd55a6bec6315",
+                "reference": "6a21eb99c6973357967f6ce3708cd55a6bec6315",
                 "shasum": ""
             },
             "require": {
@@ -7732,7 +7732,7 @@
                 "shim"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-mbstring/tree/v1.33.0"
+                "source": "https://github.com/symfony/polyfill-mbstring/tree/v1.36.0"
             },
             "funding": [
                 {
@@ -7752,20 +7752,20 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-12-23T08:48:59+00:00"
+            "time": "2026-04-10T17:25:58+00:00"
         },
         {
             "name": "symfony/polyfill-php80",
-            "version": "v1.33.0",
+            "version": "v1.36.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-php80.git",
-                "reference": "0cc9dd0f17f61d8131e7df6b84bd344899fe2608"
+                "reference": "dfb55726c3a76ea3b6459fcfda1ec2d80a682411"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-php80/zipball/0cc9dd0f17f61d8131e7df6b84bd344899fe2608",
-                "reference": "0cc9dd0f17f61d8131e7df6b84bd344899fe2608",
+                "url": "https://api.github.com/repos/symfony/polyfill-php80/zipball/dfb55726c3a76ea3b6459fcfda1ec2d80a682411",
+                "reference": "dfb55726c3a76ea3b6459fcfda1ec2d80a682411",
                 "shasum": ""
             },
             "require": {
@@ -7816,7 +7816,7 @@
                 "shim"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-php80/tree/v1.33.0"
+                "source": "https://github.com/symfony/polyfill-php80/tree/v1.36.0"
             },
             "funding": [
                 {
@@ -7836,20 +7836,20 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-01-02T08:10:11+00:00"
+            "time": "2026-04-10T16:19:22+00:00"
         },
         {
             "name": "symfony/polyfill-php83",
-            "version": "v1.33.0",
+            "version": "v1.36.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-php83.git",
-                "reference": "17f6f9a6b1735c0f163024d959f700cfbc5155e5"
+                "reference": "3600c2cb22399e25bb226e4a135ce91eeb2a6149"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-php83/zipball/17f6f9a6b1735c0f163024d959f700cfbc5155e5",
-                "reference": "17f6f9a6b1735c0f163024d959f700cfbc5155e5",
+                "url": "https://api.github.com/repos/symfony/polyfill-php83/zipball/3600c2cb22399e25bb226e4a135ce91eeb2a6149",
+                "reference": "3600c2cb22399e25bb226e4a135ce91eeb2a6149",
                 "shasum": ""
             },
             "require": {
@@ -7896,7 +7896,7 @@
                 "shim"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-php83/tree/v1.33.0"
+                "source": "https://github.com/symfony/polyfill-php83/tree/v1.36.0"
             },
             "funding": [
                 {
@@ -7916,20 +7916,20 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-07-08T02:45:35+00:00"
+            "time": "2026-04-10T17:25:58+00:00"
         },
         {
             "name": "symfony/polyfill-php84",
-            "version": "v1.33.0",
+            "version": "v1.36.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-php84.git",
-                "reference": "d8ced4d875142b6a7426000426b8abc631d6b191"
+                "reference": "88486db2c389b290bf87ff1de7ebc1e13e42bb06"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-php84/zipball/d8ced4d875142b6a7426000426b8abc631d6b191",
-                "reference": "d8ced4d875142b6a7426000426b8abc631d6b191",
+                "url": "https://api.github.com/repos/symfony/polyfill-php84/zipball/88486db2c389b290bf87ff1de7ebc1e13e42bb06",
+                "reference": "88486db2c389b290bf87ff1de7ebc1e13e42bb06",
                 "shasum": ""
             },
             "require": {
@@ -7976,7 +7976,7 @@
                 "shim"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-php84/tree/v1.33.0"
+                "source": "https://github.com/symfony/polyfill-php84/tree/v1.36.0"
             },
             "funding": [
                 {
@@ -7996,20 +7996,20 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-06-24T13:30:11+00:00"
+            "time": "2026-04-10T18:47:49+00:00"
         },
         {
             "name": "symfony/polyfill-php85",
-            "version": "v1.33.0",
+            "version": "v1.36.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-php85.git",
-                "reference": "d4e5fcd4ab3d998ab16c0db48e6cbb9a01993f91"
+                "reference": "2c408a6bb0313e6001a83628dc5506100474254e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-php85/zipball/d4e5fcd4ab3d998ab16c0db48e6cbb9a01993f91",
-                "reference": "d4e5fcd4ab3d998ab16c0db48e6cbb9a01993f91",
+                "url": "https://api.github.com/repos/symfony/polyfill-php85/zipball/2c408a6bb0313e6001a83628dc5506100474254e",
+                "reference": "2c408a6bb0313e6001a83628dc5506100474254e",
                 "shasum": ""
             },
             "require": {
@@ -8056,7 +8056,7 @@
                 "shim"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-php85/tree/v1.33.0"
+                "source": "https://github.com/symfony/polyfill-php85/tree/v1.36.0"
             },
             "funding": [
                 {
@@ -8076,7 +8076,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2025-06-23T16:12:55+00:00"
+            "time": "2026-04-10T16:50:15+00:00"
         },
         {
             "name": "symfony/service-contracts",
