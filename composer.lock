@@ -3447,11 +3447,11 @@
         },
         {
             "name": "kipchak/driver-couchdb",
-            "version": "1.20",
+            "version": "1.21",
             "source": {
                 "type": "git",
                 "url": "https://1x.ax/mamluk/kipchak/drivers/couchdb",
-                "reference": "761f65c1268806121d0cef41327ddb1707ee7205"
+                "reference": "bfc3996014ae34c49122e22e4d5a83090fd7eea3"
             },
             "require": {
                 "kipchak/core": "^2",
@@ -3476,15 +3476,15 @@
                 "couchdb",
                 "microservices"
             ],
-            "time": "2026-05-07T11:11:59+00:00"
+            "time": "2026-05-07T14:40:19+00:00"
         },
         {
             "name": "kipchak/driver-doctrine",
-            "version": "1.28",
+            "version": "1.29",
             "source": {
                 "type": "git",
                 "url": "https://1x.ax/mamluk/kipchak/drivers/doctrine",
-                "reference": "e3ee446fb93c9a76536675444b85959ecf5271f6"
+                "reference": "55bf1f23de683b79ce5e0841c85a3626ef72d453"
             },
             "require": {
                 "doctrine/orm": "^4",
@@ -3517,7 +3517,7 @@
                 "orm",
                 "pgsql"
             ],
-            "time": "2026-05-07T11:12:43+00:00"
+            "time": "2026-05-07T14:41:00+00:00"
         },
         {
             "name": "kipchak/driver-filecache",
@@ -3619,11 +3619,11 @@
         },
         {
             "name": "kipchak/driver-logger",
-            "version": "1.17",
+            "version": "1.18",
             "source": {
                 "type": "git",
                 "url": "https://1x.ax/mamluk/kipchak/drivers/logger",
-                "reference": "f26b866bd05a167ab82096cd6fbe966d6e1076e0"
+                "reference": "44765ac71aac013ae0ce9ac1129a1cbb3982eb15"
             },
             "require": {
                 "kipchak/core": "^2",
@@ -3649,15 +3649,15 @@
                 "http",
                 "microservices"
             ],
-            "time": "2026-05-07T11:10:43+00:00"
+            "time": "2026-05-07T14:39:33+00:00"
         },
         {
             "name": "kipchak/driver-memcached",
-            "version": "1.16",
+            "version": "1.17",
             "source": {
                 "type": "git",
                 "url": "https://1x.ax/mamluk/kipchak/drivers/memcached",
-                "reference": "302380d4b8d41af8d4426bd50f9c19b84502e38e"
+                "reference": "a19b726c5580270bc8b9c7334dfb1ba445ae9c78"
             },
             "require": {
                 "ext-memcached": "*",
@@ -3683,7 +3683,7 @@
                 "memcached",
                 "microservices"
             ],
-            "time": "2026-05-07T11:11:43+00:00"
+            "time": "2026-05-07T14:40:05+00:00"
         },
         {
             "name": "kipchak/driver-openai",
@@ -3725,11 +3725,11 @@
         },
         {
             "name": "kipchak/driver-rabbitmq",
-            "version": "1.24",
+            "version": "1.26",
             "source": {
                 "type": "git",
                 "url": "https://1x.ax/mamluk/kipchak/drivers/rabbitmq",
-                "reference": "a57508fac2055ddd67633a33917448e3bc308f39"
+                "reference": "d2454ee53e4b8528d983e3b2e36fcb2994477183"
             },
             "require": {
                 "kipchak/core": "^2",
@@ -3754,15 +3754,15 @@
                 "couchdb",
                 "microservices"
             ],
-            "time": "2026-05-07T11:12:13+00:00"
+            "time": "2026-05-07T14:40:33+00:00"
         },
         {
             "name": "kipchak/driver-s3",
-            "version": "1.19",
+            "version": "1.20",
             "source": {
                 "type": "git",
                 "url": "https://1x.ax/mamluk/kipchak/drivers/s3",
-                "reference": "7fda46988e50558037b55107fba56ff8c5fb32be"
+                "reference": "684bfd4624c9d2a39c09241b82ca1a7bbc2ab9cb"
             },
             "require": {
                 "async-aws/simple-s3": "*",
@@ -3788,15 +3788,15 @@
                 "object storage",
                 "s3"
             ],
-            "time": "2026-05-07T11:12:29+00:00"
+            "time": "2026-05-07T14:40:47+00:00"
         },
         {
             "name": "kipchak/middleware-auth-jwks",
-            "version": "1.17",
+            "version": "1.18",
             "source": {
                 "type": "git",
                 "url": "https://1x.ax/mamluk/kipchak/middlewares/auth-jwks",
-                "reference": "48ca43334cb952a54b22c72705ce847812efc73d"
+                "reference": "7eb0d0dcd82791e10eb373396b646d7eb31b8271"
             },
             "require": {
                 "firebase/php-jwt": "^7",
@@ -3823,15 +3823,15 @@
                 "http",
                 "microservices"
             ],
-            "time": "2026-05-07T11:14:29+00:00"
+            "time": "2026-05-07T14:42:45+00:00"
         },
         {
             "name": "kipchak/middleware-auth-key",
-            "version": "1.18",
+            "version": "1.19",
             "source": {
                 "type": "git",
                 "url": "https://1x.ax/mamluk/kipchak/middlewares/auth-key",
-                "reference": "c86241054009718b27efec101f84f12c6934e85e"
+                "reference": "b4d529ef99525e1782737723a6fbf20260b89741"
             },
             "require": {
                 "kipchak/core": "^2",
@@ -3857,7 +3857,7 @@
                 "http",
                 "microservices"
             ],
-            "time": "2026-05-07T11:14:41+00:00"
+            "time": "2026-05-07T14:42:57+00:00"
         },
         {
             "name": "kipchak/middleware-error",
@@ -3893,11 +3893,11 @@
         },
         {
             "name": "kipchak/middleware-subashi",
-            "version": "1.16",
+            "version": "1.17",
             "source": {
                 "type": "git",
                 "url": "https://1x.ax/mamluk/kipchak/middlewares/subashi",
-                "reference": "7ea75b37ba5ce99d6a24ebf818605d272e798b03"
+                "reference": "cc192ade97e2044ef8e169dd7fd849ebc696c560"
             },
             "require": {
                 "kipchak/core": "^2",
@@ -3928,7 +3928,7 @@
                 "http",
                 "microservices"
             ],
-            "time": "2026-05-07T11:15:10+00:00"
+            "time": "2026-05-07T14:43:17+00:00"
         },
         {
             "name": "laravel/serializable-closure",
