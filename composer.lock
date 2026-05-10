@@ -464,16 +464,16 @@
         },
         {
             "name": "amphp/pipeline",
-            "version": "v1.2.3",
+            "version": "v1.2.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/amphp/pipeline.git",
-                "reference": "7b52598c2e9105ebcddf247fc523161581930367"
+                "reference": "a044733e080940d1483f56caff0c412ad6982776"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/amphp/pipeline/zipball/7b52598c2e9105ebcddf247fc523161581930367",
-                "reference": "7b52598c2e9105ebcddf247fc523161581930367",
+                "url": "https://api.github.com/repos/amphp/pipeline/zipball/a044733e080940d1483f56caff0c412ad6982776",
+                "reference": "a044733e080940d1483f56caff0c412ad6982776",
                 "shasum": ""
             },
             "require": {
@@ -485,7 +485,7 @@
                 "amphp/php-cs-fixer-config": "^2",
                 "amphp/phpunit-util": "^3",
                 "phpunit/phpunit": "^9",
-                "psalm/phar": "^5.18"
+                "psalm/phar": "6.16.1"
             },
             "type": "library",
             "autoload": {
@@ -519,7 +519,7 @@
             ],
             "support": {
                 "issues": "https://github.com/amphp/pipeline/issues",
-                "source": "https://github.com/amphp/pipeline/tree/v1.2.3"
+                "source": "https://github.com/amphp/pipeline/tree/v1.2.4"
             },
             "funding": [
                 {
@@ -527,7 +527,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2025-03-16T16:33:53+00:00"
+            "time": "2026-05-06T05:37:57+00:00"
         },
         {
             "name": "amphp/process",
@@ -1908,17 +1908,17 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/doctrine/orm.git",
-                "reference": "78ed4cddeb3e79bb7c623861eed3bd15ca35c371"
+                "reference": "47b2ae37ddffdd080250e7cd1bee6c425b3ba921"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/doctrine/orm/zipball/78ed4cddeb3e79bb7c623861eed3bd15ca35c371",
-                "reference": "78ed4cddeb3e79bb7c623861eed3bd15ca35c371",
+                "url": "https://api.github.com/repos/doctrine/orm/zipball/47b2ae37ddffdd080250e7cd1bee6c425b3ba921",
+                "reference": "47b2ae37ddffdd080250e7cd1bee6c425b3ba921",
                 "shasum": ""
             },
             "require": {
                 "composer-runtime-api": "^2",
-                "doctrine/collections": "^3",
+                "doctrine/collections": "^3.1",
                 "doctrine/dbal": "^4.2.1",
                 "doctrine/deprecations": "^1.1",
                 "doctrine/event-manager": "^2.1.1",
@@ -1929,7 +1929,8 @@
                 "ext-ctype": "*",
                 "php": "^8.4",
                 "psr/cache": "^1 || ^2 || ^3",
-                "symfony/console": "^5.4 || ^6.0 || ^7.0 || ^8.0"
+                "symfony/console": "^5.4 || ^6.0 || ^7.0 || ^8.0",
+                "symfony/polyfill-php86": "^1.37"
             },
             "require-dev": {
                 "doctrine/coding-standard": "^14.0",
@@ -1988,7 +1989,7 @@
                 "issues": "https://github.com/doctrine/orm/issues",
                 "source": "https://github.com/doctrine/orm/tree/4.0.x"
             },
-            "time": "2026-04-09T08:20:54+00:00"
+            "time": "2026-05-10T08:04:36+00:00"
         },
         {
             "name": "doctrine/persistence",
@@ -3447,11 +3448,11 @@
         },
         {
             "name": "kipchak/driver-couchdb",
-            "version": "1.21",
+            "version": "1.22",
             "source": {
                 "type": "git",
                 "url": "https://1x.ax/mamluk/kipchak/drivers/couchdb",
-                "reference": "bfc3996014ae34c49122e22e4d5a83090fd7eea3"
+                "reference": "e2c960e9876cb93276db122e127b9d71626913c5"
             },
             "require": {
                 "kipchak/core": "^2",
@@ -3476,15 +3477,15 @@
                 "couchdb",
                 "microservices"
             ],
-            "time": "2026-05-07T14:40:19+00:00"
+            "time": "2026-05-10T12:39:00+00:00"
         },
         {
             "name": "kipchak/driver-doctrine",
-            "version": "1.29",
+            "version": "1.30",
             "source": {
                 "type": "git",
                 "url": "https://1x.ax/mamluk/kipchak/drivers/doctrine",
-                "reference": "55bf1f23de683b79ce5e0841c85a3626ef72d453"
+                "reference": "49aac0f34b270e19787dd578740c9c11cbcddb58"
             },
             "require": {
                 "doctrine/orm": "^4",
@@ -3517,7 +3518,7 @@
                 "orm",
                 "pgsql"
             ],
-            "time": "2026-05-07T14:41:00+00:00"
+            "time": "2026-05-10T12:39:47+00:00"
         },
         {
             "name": "kipchak/driver-filecache",
@@ -3725,11 +3726,11 @@
         },
         {
             "name": "kipchak/driver-rabbitmq",
-            "version": "1.26",
+            "version": "1.27",
             "source": {
                 "type": "git",
                 "url": "https://1x.ax/mamluk/kipchak/drivers/rabbitmq",
-                "reference": "d2454ee53e4b8528d983e3b2e36fcb2994477183"
+                "reference": "44389dd49dee41c54bcfd9c3cb17f37411981597"
             },
             "require": {
                 "kipchak/core": "^2",
@@ -3754,15 +3755,15 @@
                 "couchdb",
                 "microservices"
             ],
-            "time": "2026-05-07T14:40:33+00:00"
+            "time": "2026-05-10T12:39:17+00:00"
         },
         {
             "name": "kipchak/driver-s3",
-            "version": "1.20",
+            "version": "1.21",
             "source": {
                 "type": "git",
                 "url": "https://1x.ax/mamluk/kipchak/drivers/s3",
-                "reference": "684bfd4624c9d2a39c09241b82ca1a7bbc2ab9cb"
+                "reference": "d6cfe0c8406c35c57f2f440343eac217a673de54"
             },
             "require": {
                 "async-aws/simple-s3": "*",
@@ -3788,7 +3789,7 @@
                 "object storage",
                 "s3"
             ],
-            "time": "2026-05-07T14:40:47+00:00"
+            "time": "2026-05-10T12:39:30+00:00"
         },
         {
             "name": "kipchak/middleware-auth-jwks",
