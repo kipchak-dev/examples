@@ -16,8 +16,23 @@ $app->addBodyParsingMiddleware();
 
 // Handler outside the loop for better performance (doing less work)
 $handler = static function () use ($app) {
-    // Reset each Doctrine identity map on every request (FrankenPHP worker mode keeps one EM per process)
-    // Doctrine::get('entitymanager.primary')->clear();
+    // If using Doctrine, please add the following for each Entity Manager to allow clearing of Singleton Objects and to deal
+    // with connectiont timeouts caused by FrankenPHP's long running process
+    // $em = Doctrine::get('entitymanager.primary');
+
+    // FrankenPHP worker mode holds one EM/Connection across many requests. Probe the
+    // connection so a stale socket (MySQL primary failover, mysqld restart, idle reap)
+    // is replaced with a fresh one *before* request handling — otherwise every request
+    // on this worker fails until max_consecutive_failures triggers a recycle.
+    // $conn = $em->getConnection();
+    // try {
+    //     $conn->executeQuery('SELECT 1')->fetchOne();
+    // } catch (ConnectionLost | ConnectionException) {
+    //     $conn->close(); // DBAL is lazy; the next query opens a fresh socket.
+    // }
+
+    // Reset Doctrine identity map on every request (FrankenPHP worker mode keeps one EM per process)
+    // $em->clear();
 
     /**
      * Tweak these headers as needed, especially if you are going to use this API from a client side SPA
@@ -41,7 +56,7 @@ $handler = static function () use ($app) {
     }
 };
 
-$maxRequests = (int)($_SERVER['MAX_REQUESTS'] ?? 0);
+$maxRequests = (int)($_SERVER['MAX_REQUESTS'] ?? 10000);
 for ($nbRequests = 0; !$maxRequests || $nbRequests < $maxRequests; ++$nbRequests) {
     $keepRunning = \frankenphp_handle_request($handler);
 
