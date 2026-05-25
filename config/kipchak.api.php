@@ -4,7 +4,7 @@ use function Kipchak\Core\env;
 
 return [
     'name' => 'kipchak-template', // Hyphen or underscore separated string
-    'debug' => (bool) env('DEBUG', true),
+    'debug' => env('DEBUG', true) == true,
     'logExceptions' => true,
     'logExceptionDetails' => true,
     // If debug is enabled, loglevel is debug. Otherwise, it is info. Overwrite it by specifying it below.
