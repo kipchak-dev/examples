@@ -1,4 +1,4 @@
-FROM 1x.ax/mamluk/php/8.4:franken-dev
+FROM 1x.ax/mamluk/php/8.5:franken-dev
 
 # Copy files
 COPY . /var/www/

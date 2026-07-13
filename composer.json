@@ -6,27 +6,27 @@
     "license": "MIT",
     "require": {
         "php": ">=8.4",
-        "kipchak/core": "^2",
+        "kipchak/core": "^2 || ^3",
         "kipchak/driver-couchdb": "^1",
         "kipchak/driver-memcached": "^1",
-        "kipchak/driver-http": "^1",
+        "kipchak/driver-http": "^1 || ^2",
         "kipchak/driver-filecache": "^1",
         "kipchak/driver-doctrine": "^1",
         "kipchak/driver-logger": "^1",
         "kipchak/driver-rabbitmq": "^1",
         "kipchak/driver-git": "^1",
         "kipchak/driver-s3": "^1",
-        "kipchak/driver-anthropic": "^1",
+        "kipchak/driver-anthropic": "^1 || ^2",
         "kipchak/driver-cloudflare-dns": "^1",
         "kipchak/driver-cloudns": "^1",
-        "kipchak/driver-openai": "^1",
+        "kipchak/driver-openai": "^1 || ^2",
         "kipchak/middleware-error": "^1",
         "kipchak/middleware-auth-key": "^1",
         "kipchak/middleware-auth-jwks": "^1",
         "kipchak/middleware-subashi": "^1"
     },
     "require-dev": {
-        "phpunit/phpunit": "^9.6"
+        "phpunit/phpunit": "^12"
     },
     "autoload": {
         "psr-4": {

@@ -2,7 +2,9 @@
 
 # Kipchak Starter
 
-This is the starter project for [Kipchak](https://kipchak.dev) — a PHP 8.4+ API Development Kit (ADK) built on top of [Slim Framework v4](https://www.slimframework.com/) and optimised for [FrankenPHP](https://frankenphp.dev/) in worker mode.
+This is the starter project for [Kipchak](https://kipchak.dev) — a PHP 8.4+ API Development Kit (ADK) built on top of [Slim Framework v4](https://www.slimframework.com/) and optimised for [FrankenPHP](https://frankenphp.dev/) in worker mode. It runs on PHP 8.4 and 8.5.
+
+> Upgrading an existing project? See the [upgrade guide](https://kipchak.dev/docs/upgrades) for the changes in each major version.
 
 The starter demonstrates all bundled drivers and middlewares, lays out an opinionated project structure, and is fully usable as a vanilla Slim application. Nothing in Slim is restricted.
 
