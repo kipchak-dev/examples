@@ -3916,11 +3916,11 @@
         },
         {
             "name": "kipchak/middleware-subashi",
-            "version": "1.26",
+            "version": "1.27",
             "source": {
                 "type": "git",
                 "url": "https://1x.ax/mamluk/kipchak/middlewares/subashi",
-                "reference": "dd19b1aefcd45bea7fd0c96d2cdd0a1c1bea4697"
+                "reference": "4d30b4e78ed0f58742be9df5398ddb5b4c3aac3c"
             },
             "require": {
                 "kipchak/core": "^2 || ^3",
@@ -3929,10 +3929,14 @@
                 "kipchak/driver-logger": "^1",
                 "kipchak/driver-memcached": "^1"
             },
+            "require-dev": {
+                "phpunit/phpunit": "^12"
+            },
             "type": "middleware",
             "autoload": {
                 "psr-4": {
-                    "Kipchak\\Middleware\\Subashi\\": "src/"
+                    "Kipchak\\Middleware\\Subashi\\": "src/",
+                    "Kipchak\\Middleware\\Subashi\\tests\\": "tests/"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -3951,7 +3955,7 @@
                 "http",
                 "microservices"
             ],
-            "time": "2026-09-06T04:04:58+00:00"
+            "time": "2026-09-06T12:19:21+00:00"
         },
         {
             "name": "laravel/serializable-closure",
