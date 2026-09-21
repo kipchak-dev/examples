@@ -1,4 +1,4 @@
-<img src=".mamluk/logo.svg" width="96" alt="Kipchak" />
+<img src=".mamluk/logo.png" width="96" alt="Kipchak" />
 
 # Kipchak Starter
 
