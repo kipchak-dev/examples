@@ -3511,11 +3511,11 @@
         },
         {
             "name": "kipchak/driver-doctrine",
-            "version": "1.44",
+            "version": "1.45",
             "source": {
                 "type": "git",
                 "url": "https://1x.ax/mamluk/kipchak/drivers/doctrine",
-                "reference": "b2ccd3a69272309454cb098aa8e09ef2d302bd1b"
+                "reference": "83b2f48d07ad2f3df72691ebf0b975ada9840b2d"
             },
             "require": {
                 "doctrine/orm": "^4",
@@ -3551,15 +3551,15 @@
                 "orm",
                 "pgsql"
             ],
-            "time": "2026-10-07T04:01:15+00:00"
+            "time": "2026-10-07T11:14:45+00:00"
         },
         {
             "name": "kipchak/driver-filecache",
-            "version": "1.26",
+            "version": "1.27",
             "source": {
                 "type": "git",
                 "url": "https://1x.ax/mamluk/kipchak/drivers/filecache",
-                "reference": "018d42fefd83bc371fbbb0f47374c78467668e66"
+                "reference": "718d2440da4c183bc9b87784f0798ad0c22c4bf1"
             },
             "require": {
                 "kipchak/core": "^2 || ^3",
@@ -3584,7 +3584,7 @@
                 "http",
                 "microservices"
             ],
-            "time": "2026-10-07T03:59:05+00:00"
+            "time": "2026-10-07T11:13:29+00:00"
         },
         {
             "name": "kipchak/driver-git",
@@ -3687,11 +3687,11 @@
         },
         {
             "name": "kipchak/driver-memcached",
-            "version": "1.30",
+            "version": "1.31",
             "source": {
                 "type": "git",
                 "url": "https://1x.ax/mamluk/kipchak/drivers/memcached",
-                "reference": "9c12192bd8cba9e64a38671f48693e8fd22aa65e"
+                "reference": "b8e240baafdfc1f3c5b923d126a79eb95cc1249e"
             },
             "require": {
                 "ext-memcached": "*",
@@ -3720,7 +3720,7 @@
                 "memcached",
                 "microservices"
             ],
-            "time": "2026-10-07T03:59:58+00:00"
+            "time": "2026-10-07T11:14:01+00:00"
         },
         {
             "name": "kipchak/driver-openai",
@@ -3829,11 +3829,11 @@
         },
         {
             "name": "kipchak/middleware-auth-jwks",
-            "version": "1.32",
+            "version": "1.33",
             "source": {
                 "type": "git",
                 "url": "https://1x.ax/mamluk/kipchak/middlewares/auth-jwks",
-                "reference": "68f57b3ddc9f7d188fc171f20a181fd0e2c58a5f"
+                "reference": "f034641487716e2190a6f1f2f873fdf74250996a"
             },
             "require": {
                 "firebase/php-jwt": "^7",
@@ -3841,6 +3841,9 @@
                 "kipchak/driver-config": "^1",
                 "kipchak/driver-filecache": "^1",
                 "kipchak/driver-logger": "^1"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^12"
             },
             "type": "middleware",
             "autoload": {
@@ -3860,7 +3863,7 @@
                 "http",
                 "microservices"
             ],
-            "time": "2026-10-07T04:04:47+00:00"
+            "time": "2026-10-07T11:17:02+00:00"
         },
         {
             "name": "kipchak/middleware-auth-key",
@@ -3930,18 +3933,19 @@
         },
         {
             "name": "kipchak/middleware-subashi",
-            "version": "1.30",
+            "version": "1.31",
             "source": {
                 "type": "git",
                 "url": "https://1x.ax/mamluk/kipchak/middlewares/subashi",
-                "reference": "299181ac3496b268e1011e39be4d45295bbaea83"
+                "reference": "f6ae45432f6823de5d4f5353d5b9aae8bf0356a4"
             },
             "require": {
                 "kipchak/core": "^2 || ^3",
                 "kipchak/driver-config": "^1",
                 "kipchak/driver-filecache": "^1",
                 "kipchak/driver-logger": "^1",
-                "kipchak/driver-memcached": "^1"
+                "kipchak/driver-memcached": "^1",
+                "psr/clock": "^1"
             },
             "require-dev": {
                 "phpunit/phpunit": "^12"
@@ -3969,7 +3973,7 @@
                 "http",
                 "microservices"
             ],
-            "time": "2026-10-07T04:05:58+00:00"
+            "time": "2026-10-07T11:17:49+00:00"
         },
         {
             "name": "laravel/serializable-closure",
@@ -7542,16 +7546,16 @@
         },
         {
             "name": "symfony/polyfill-deepclone",
-            "version": "v1.43.0",
+            "version": "v1.43.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/polyfill-deepclone.git",
-                "reference": "8db92c5508a3f7f82d8688d32f0a4868a26e58ad"
+                "reference": "aaba44b6ee7299ae65717811c55b57ab9bc0fedd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/polyfill-deepclone/zipball/8db92c5508a3f7f82d8688d32f0a4868a26e58ad",
-                "reference": "8db92c5508a3f7f82d8688d32f0a4868a26e58ad",
+                "url": "https://api.github.com/repos/symfony/polyfill-deepclone/zipball/aaba44b6ee7299ae65717811c55b57ab9bc0fedd",
+                "reference": "aaba44b6ee7299ae65717811c55b57ab9bc0fedd",
                 "shasum": ""
             },
             "require": {
@@ -7605,7 +7609,7 @@
                 "shim"
             ],
             "support": {
-                "source": "https://github.com/symfony/polyfill-deepclone/tree/v1.43.0"
+                "source": "https://github.com/symfony/polyfill-deepclone/tree/v1.43.1"
             },
             "funding": [
                 {
@@ -7625,7 +7629,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-09-30T09:07:27+00:00"
+            "time": "2026-10-06T19:46:18+00:00"
         },
         {
             "name": "symfony/polyfill-intl-grapheme",
