@@ -3332,18 +3332,18 @@
         },
         {
             "name": "kipchak/driver-anthropic",
-            "version": "2.9",
+            "version": "2.10",
             "source": {
                 "type": "git",
                 "url": "https://1x.ax/mamluk/kipchak/drivers/anthropic",
-                "reference": "3b4a8ea88bf1a0e9e6e906c4b0d371219f8046f2"
+                "reference": "3d6f0ac11cdd6b4f8878137deead022d746c4c4b"
             },
             "require": {
                 "anthropic-ai/sdk": "^0.36",
                 "kipchak/core": "^2 || ^3",
                 "kipchak/driver-config": "^1",
-                "php": "^8.4",
-                "symfony/http-client": "^8.0"
+                "kipchak/driver-http": "^2.10",
+                "php": "^8.4"
             },
             "require-dev": {
                 "phpunit/phpunit": "^12"
@@ -3368,7 +3368,7 @@
                 "claude",
                 "microservices"
             ],
-            "time": "2026-10-07T04:03:02+00:00"
+            "time": "2026-10-08T05:55:40+00:00"
         },
         {
             "name": "kipchak/driver-cloudflare-dns",
@@ -3734,17 +3734,17 @@
         },
         {
             "name": "kipchak/driver-openai",
-            "version": "2.9",
+            "version": "2.10",
             "source": {
                 "type": "git",
                 "url": "https://1x.ax/mamluk/kipchak/drivers/openai",
-                "reference": "a9f2d126e54c34d33a1d3f60604ed0a4b94e33a4"
+                "reference": "e790579b622130b4a7d3606ee9140a62758ce786"
             },
             "require": {
                 "kipchak/core": "^2 || ^3",
                 "kipchak/driver-config": "^1",
-                "openai-php/client": "^0.20",
-                "symfony/http-client": "^8.0"
+                "kipchak/driver-http": "^2.10",
+                "openai-php/client": "^0.20"
             },
             "require-dev": {
                 "phpunit/phpunit": "^12"
@@ -3768,7 +3768,7 @@
                 "microservices",
                 "openai"
             ],
-            "time": "2026-10-07T04:02:20+00:00"
+            "time": "2026-10-08T05:55:40+00:00"
         },
         {
             "name": "kipchak/driver-rabbitmq",
