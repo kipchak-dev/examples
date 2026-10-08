@@ -3372,11 +3372,11 @@
         },
         {
             "name": "kipchak/driver-cloudflare-dns",
-            "version": "1.21",
+            "version": "1.22",
             "source": {
                 "type": "git",
                 "url": "https://1x.ax/mamluk/kipchak/drivers/cloudflare-dns",
-                "reference": "afb22c0014df10558191f0656ea9343f20f20a81"
+                "reference": "83b76dbe61f268b38809b1e39927cd8a1b576e89"
             },
             "require": {
                 "kipchak/core": "^2 || ^3",
@@ -3405,15 +3405,15 @@
                 "dns",
                 "microservices"
             ],
-            "time": "2026-10-07T04:03:44+00:00"
+            "time": "2026-10-08T05:39:05+00:00"
         },
         {
             "name": "kipchak/driver-cloudns",
-            "version": "1.28",
+            "version": "1.29",
             "source": {
                 "type": "git",
                 "url": "https://1x.ax/mamluk/kipchak/drivers/cloudns",
-                "reference": "154418cfc09477cacc0c1b0a918c8f03ea83c7b3"
+                "reference": "7c809e9adab29eabc0e2812c6dfd7019e4dadd79"
             },
             "require": {
                 "kipchak/core": "^2 || ^3",
@@ -3442,7 +3442,7 @@
                 "dns",
                 "microservices"
             ],
-            "time": "2026-10-07T04:03:22+00:00"
+            "time": "2026-10-08T05:38:44+00:00"
         },
         {
             "name": "kipchak/driver-config",
@@ -3620,16 +3620,26 @@
         },
         {
             "name": "kipchak/driver-http",
-            "version": "2.9",
+            "version": "2.10",
             "source": {
                 "type": "git",
                 "url": "https://1x.ax/mamluk/kipchak/drivers/http",
-                "reference": "31944738ebb71759df08188811f8b1e8f1c78340"
+                "reference": "11e64f8a62155ccdb3510fcf208f7d9617c53642"
             },
             "require": {
                 "guzzlehttp/guzzle": "^7.10",
                 "illuminate/http": "^13.0",
-                "kipchak/core": "^2 || ^3"
+                "kipchak/core": "^2 || ^3",
+                "psr/http-client": "^1"
+            },
+            "require-dev": {
+                "http-interop/http-factory-tests": "^2.4",
+                "kipchak/driver-config": "^1",
+                "php-http/client-integration-tests": "^4.1",
+                "phpunit/phpunit": "^12"
+            },
+            "suggest": {
+                "kipchak/driver-config": "Named clients from config/kipchak.http.php; without it, Http::get() returns Laravel's client as before"
             },
             "type": "middleware",
             "autoload": {
@@ -3649,7 +3659,7 @@
                 "http",
                 "microservices"
             ],
-            "time": "2026-10-07T03:59:24+00:00"
+            "time": "2026-10-08T05:35:21+00:00"
         },
         {
             "name": "kipchak/driver-logger",
@@ -3762,11 +3772,11 @@
         },
         {
             "name": "kipchak/driver-rabbitmq",
-            "version": "1.39",
+            "version": "1.40",
             "source": {
                 "type": "git",
                 "url": "https://1x.ax/mamluk/kipchak/drivers/rabbitmq",
-                "reference": "42b0b88d07afbb9677c8e8150045615fb973d2f0"
+                "reference": "a8e56d24d47757137d3898bfa5205096e25cdb3e"
             },
             "require": {
                 "kipchak/core": "^2 || ^3",
@@ -3791,7 +3801,7 @@
                 "couchdb",
                 "microservices"
             ],
-            "time": "2026-10-07T04:00:35+00:00"
+            "time": "2026-10-08T05:36:55+00:00"
         },
         {
             "name": "kipchak/driver-s3",
@@ -5106,16 +5116,16 @@
         },
         {
             "name": "phpseclib/phpseclib",
-            "version": "4.0.1",
+            "version": "4.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpseclib/phpseclib.git",
-                "reference": "bb7b959c8159957edae6f5084ebbac765d310e16"
+                "reference": "1fe20b9acb08ce810cec24d8a9d02e7c13426e4c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpseclib/phpseclib/zipball/bb7b959c8159957edae6f5084ebbac765d310e16",
-                "reference": "bb7b959c8159957edae6f5084ebbac765d310e16",
+                "url": "https://api.github.com/repos/phpseclib/phpseclib/zipball/1fe20b9acb08ce810cec24d8a9d02e7c13426e4c",
+                "reference": "1fe20b9acb08ce810cec24d8a9d02e7c13426e4c",
                 "shasum": ""
             },
             "require": {
@@ -5206,7 +5216,7 @@
             ],
             "support": {
                 "issues": "https://github.com/phpseclib/phpseclib/issues",
-                "source": "https://github.com/phpseclib/phpseclib/tree/4.0.1"
+                "source": "https://github.com/phpseclib/phpseclib/tree/4.0.2"
             },
             "funding": [
                 {
@@ -5222,7 +5232,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2026-08-26T12:15:13+00:00"
+            "time": "2026-10-07T19:55:38+00:00"
         },
         {
             "name": "phpstan/phpdoc-parser",
