@@ -14,6 +14,7 @@ use \Kipchak\Driver\Memcached\Memcached;
 use Kipchak\Driver\OpenAI\OpenAI;
 use Kipchak\Driver\RabbitMQ\RabbitMQ;
 use Kipchak\Driver\S3\S3;
+use Kipchak\Driver\Sftp\Sftp;
 use Psr\Container\ContainerInterface;
 
 /** Initialise any drivers installed or coded in the project over here
@@ -34,6 +35,7 @@ Doctrine::initialise($container);
 RabbitMQ::initialise($container);
 Git::initialise($container);
 S3::initialise($container);
+Sftp::initialise($container);
 OpenAI::initialise($container);
 Anthropic::initialise($container);
 CloudflareDns::initialise($container);

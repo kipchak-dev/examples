@@ -121,6 +121,7 @@ The starter includes and demonstrates the following drivers:
 |              |                          | `GET /v1/rabbitmq/subscribe` |                                         |
 | S3           | `kipchak.s3.php`         | `GET /v1/s3`                 | S3-compatible object storage            |
 | Git          | `kipchak.git.php`        | `GET /v1/git`                | Git repository operations over HTTPS    |
+| SFTP         | `kipchak.sftp.php`       | `GET /v1/sftp`               | Batch file exchange over SFTP           |
 
 ### AI
 
@@ -187,6 +188,7 @@ env('ENV_VAR_NAME', 'default-value')
 | `kipchak.openai.php`          | OpenAI API key, organisation, project, and default model  |
 | `kipchak.rabbitmq.php`        | RabbitMQ connection and queue definitions                 |
 | `kipchak.s3.php`              | S3-compatible endpoint(s), credentials, and region        |
+| `kipchak.sftp.php`            | SFTP server(s), credentials, and host key fingerprints    |
 | `kipchak.subashi.php`         | WAF rules: whitelist, blacklist, and rate limit rules     |
 
 ---
