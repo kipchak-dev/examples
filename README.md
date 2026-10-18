@@ -122,6 +122,7 @@ The starter includes and demonstrates the following drivers:
 | S3           | `kipchak.s3.php`         | `GET /v1/s3`                 | S3-compatible object storage            |
 | Git          | `kipchak.git.php`        | `GET /v1/git`                | Git repository operations over HTTPS    |
 | SFTP         | `kipchak.sftp.php`       | `GET /v1/sftp`               | Batch file exchange over SFTP           |
+| Feature Flags | `kipchak.feature-flags.php` | `GET /v1/flags`          | Feature flags from Unleash, Flagsmith or GrowthBook |
 
 ### AI
 
@@ -183,6 +184,7 @@ env('ENV_VAR_NAME', 'default-value')
 | `kipchak.cloudns.php`         | ClouDNS credentials                                       |
 | `kipchak.couchdb.php`         | CouchDB host, port, credentials, and database             |
 | `kipchak.doctrine.php`        | Doctrine DBAL connections and ORM entity manager settings |
+| `kipchak.feature-flags.php`   | Feature flag connections (Unleash, Flagsmith, GrowthBook) |
 | `kipchak.git.php`             | Git clone directory and named repository definitions      |
 | `kipchak.memcached.php`       | Memcached server pools and options                        |
 | `kipchak.openai.php`          | OpenAI API key, organisation, project, and default model  |
