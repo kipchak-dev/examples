@@ -4,6 +4,7 @@ use Kipchak\Driver\Anthropic\Anthropic;
 use Kipchak\Driver\CloudflareDns\CloudflareDns;
 use Kipchak\Driver\ClouDns\ClouDns;
 use Kipchak\Driver\Config\Config;
+use Kipchak\Driver\ClickHouse\ClickHouse;
 use Kipchak\Driver\CouchDB\CouchDB;
 use Kipchak\Driver\Doctrine\Doctrine;
 use Kipchak\Driver\FeatureFlags\FeatureFlags;
@@ -16,6 +17,7 @@ use Kipchak\Driver\OpenAI\OpenAI;
 use Kipchak\Driver\RabbitMQ\RabbitMQ;
 use Kipchak\Driver\S3\S3;
 use Kipchak\Driver\Sftp\Sftp;
+use Kipchak\Driver\Vector\Vector;
 use Psr\Container\ContainerInterface;
 
 /** Initialise any drivers installed or coded in the project over here
@@ -42,3 +44,5 @@ OpenAI::initialise($container);
 Anthropic::initialise($container);
 CloudflareDns::initialise($container);
 ClouDns::initialise($container);
+ClickHouse::initialise($container);
+Vector::initialise($container);

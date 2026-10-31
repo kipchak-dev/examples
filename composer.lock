@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "511338681eef1f1f4beee281e40ec507",
+    "content-hash": "26070bb4299c9cebae8961d882bb4841",
     "packages": [
         {
             "name": "amphp/amp",
@@ -3371,6 +3371,49 @@
             "time": "2026-10-28T05:01:40+00:00"
         },
         {
+            "name": "kipchak/driver-clickhouse",
+            "version": "1.1",
+            "source": {
+                "type": "git",
+                "url": "https://1x.ax/mamluk/kipchak/drivers/clickhouse.git",
+                "reference": "98d776355d51574bb4b1f439a265b0bd272e3ffb"
+            },
+            "require": {
+                "kipchak/core": "^2 || ^3",
+                "kipchak/driver-config": "^1",
+                "kipchak/driver-filecache": "^1.28",
+                "kipchak/driver-http": "^2.10",
+                "php": ">=8.4",
+                "psr/log": "^2 || ^3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^12",
+                "psr/simple-cache": "^2 || ^3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Kipchak\\Driver\\ClickHouse\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "A ClickHouse driver for analytics queries and high-volume inserts from the Kipchak API Development Kit (ADK)",
+            "homepage": "https://mamluk.net",
+            "keywords": [
+                "Mamluk",
+                "analytics",
+                "apis",
+                "clickhouse",
+                "database",
+                "microservices",
+                "olap"
+            ],
+            "time": "2026-10-31T10:17:03+00:00"
+        },
+        {
             "name": "kipchak/driver-cloudflare-dns",
             "version": "1.25",
             "source": {
@@ -3928,6 +3971,92 @@
             "time": "2026-10-28T05:04:09+00:00"
         },
         {
+            "name": "kipchak/driver-vector",
+            "version": "1.0",
+            "source": {
+                "type": "git",
+                "url": "https://1x.ax/mamluk/kipchak/drivers/vector.git",
+                "reference": "b75e33f1a25c7e338d4315c03dd4ca4ac7948db4"
+            },
+            "require": {
+                "kipchak/core": "^2 || ^3",
+                "kipchak/driver-config": "^1",
+                "kipchak/driver-http": "^2.10",
+                "php": ">=8.4"
+            },
+            "require-dev": {
+                "doctrine/dbal": "^4",
+                "openai-php/client": "^0.20",
+                "phpunit/phpunit": "^12"
+            },
+            "suggest": {
+                "kipchak/driver-doctrine": "For the pgvector store: its DBAL connection is used",
+                "kipchak/driver-openai": "For embeddings with upsertTexts() and searchText()"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Kipchak\\Driver\\Vector\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "A vector database driver for semantic search and RAG with Qdrant, pgvector or OpenSearch from the Kipchak API Development Kit (ADK)",
+            "homepage": "https://mamluk.net",
+            "keywords": [
+                "Mamluk",
+                "apis",
+                "embeddings",
+                "microservices",
+                "opensearch",
+                "pgvector",
+                "qdrant",
+                "rag",
+                "vector database"
+            ],
+            "time": "2026-10-31T08:57:12+00:00"
+        },
+        {
+            "name": "kipchak/identity",
+            "version": "1.3",
+            "source": {
+                "type": "git",
+                "url": "https://1x.ax/mamluk/kipchak/libraries/identity.git",
+                "reference": "861b35c08a516812760acd78d31be645894f7ef9"
+            },
+            "require": {
+                "kipchak/driver-config": "^1",
+                "php": ">=8.4",
+                "psr/http-message": "^1.1 || ^2"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^12",
+                "slim/psr7": "^1"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Kipchak\\Identity\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Consumer and tenant identity for the Kipchak API Development Kit (ADK): who a request is from, read from API keys, verified tokens, request attributes or headers, defined once and shared by metering and quotas.",
+            "homepage": "https://kipchak.dev",
+            "keywords": [
+                "Mamluk",
+                "apis",
+                "identity",
+                "microservices",
+                "multi-tenancy"
+            ],
+            "time": "2026-10-28T04:56:37+00:00"
+        },
+        {
             "name": "kipchak/middleware-auth-jwks",
             "version": "1.36",
             "source": {
@@ -4030,6 +4159,104 @@
                 "microservices"
             ],
             "time": "2026-10-28T05:05:52+00:00"
+        },
+        {
+            "name": "kipchak/middleware-feature-flags",
+            "version": "1.0",
+            "source": {
+                "type": "git",
+                "url": "https://1x.ax/mamluk/kipchak/middlewares/feature-flags.git",
+                "reference": "b876f85a156f9aad2b844250fba97f7d4b8e3aff"
+            },
+            "require": {
+                "kipchak/core": "^2 || ^3",
+                "kipchak/driver-config": "^1",
+                "kipchak/driver-feature-flags": "^1.2",
+                "kipchak/driver-logger": "^1",
+                "kipchak/identity": "^1.3",
+                "php": ">=8.4",
+                "psr/http-server-middleware": "^1"
+            },
+            "require-dev": {
+                "flagsmith/flagsmith-php-client": "^5.1",
+                "growthbook/growthbook": "^2.6",
+                "phpunit/phpunit": "^12",
+                "unleash/client": "^2.11"
+            },
+            "type": "middleware",
+            "autoload": {
+                "psr-4": {
+                    "Kipchak\\Middleware\\FeatureFlags\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Feature Flag Middleware for the Kipchak API Development Kit (ADK). Gates routes on flags from Unleash, Flagsmith or GrowthBook, with rollouts that stay sticky per consumer or API key.",
+            "homepage": "https://mamluk.net",
+            "keywords": [
+                "GrowthBook",
+                "Mamluk",
+                "apis",
+                "feature flags",
+                "feature toggles",
+                "flagsmith",
+                "microservices",
+                "rollouts",
+                "unleash"
+            ],
+            "time": "2026-10-31T08:57:17+00:00"
+        },
+        {
+            "name": "kipchak/middleware-response-cache",
+            "version": "1.0",
+            "source": {
+                "type": "git",
+                "url": "https://1x.ax/mamluk/kipchak/middlewares/response-cache.git",
+                "reference": "8dabcbb772ea5f9a1a6ff7347756ad53a132f6f5"
+            },
+            "require": {
+                "kipchak/core": "^2 || ^3",
+                "kipchak/driver-config": "^1",
+                "kipchak/driver-filecache": "^1.28",
+                "kipchak/driver-logger": "^1",
+                "kipchak/identity": "^1.3",
+                "php": ">=8.4",
+                "psr/clock": "^1",
+                "psr/http-server-middleware": "^1"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^12",
+                "psr/simple-cache": "^2 || ^3"
+            },
+            "suggest": {
+                "kipchak/driver-memcached": "A cache shared by every host",
+                "kipchak/driver-valkey": "A cache shared by every host (Kipchak Enterprise)"
+            },
+            "type": "middleware",
+            "autoload": {
+                "psr-4": {
+                    "Kipchak\\Middleware\\ResponseCache\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "Response Cache Middleware for the Kipchak API Development Kit (ADK). A shared HTTP cache (RFC 9111) with ETags, conditional requests and invalidation, on Filecache, Memcached or Valkey.",
+            "homepage": "https://mamluk.net",
+            "keywords": [
+                "Etag",
+                "Mamluk",
+                "apis",
+                "cache",
+                "cache-control",
+                "http",
+                "http caching",
+                "microservices"
+            ],
+            "time": "2026-10-31T08:57:15+00:00"
         },
         {
             "name": "kipchak/middleware-subashi",

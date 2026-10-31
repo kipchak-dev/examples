@@ -123,6 +123,8 @@ The starter includes and demonstrates the following drivers:
 | Git          | `kipchak.git.php`        | `GET /v1/git`                | Git repository operations over HTTPS    |
 | SFTP         | `kipchak.sftp.php`       | `GET /v1/sftp`               | Batch file exchange over SFTP           |
 | Feature Flags | `kipchak.feature-flags.php` | `GET /v1/flags`          | Feature flags from Unleash, Flagsmith or GrowthBook |
+| ClickHouse   | `kipchak.clickhouse.php` | `GET /v1/clickhouse`         | Analytics queries and batched inserts (ClickHouse in `docker-compose.yml`) |
+| Vector       | `kipchak.vector.php`     | `GET /v1/vector`             | Similarity search over Qdrant, pgvector or OpenSearch (Qdrant in `docker-compose.yml`) |
 
 ### AI
 
@@ -150,6 +152,8 @@ Middlewares are registered in `middlewares/middlewares.php` and apply globally t
 | API Key       | `kipchak.auth.key.php` | Validates an API key from a header or query parameter. Disabled by default. |
 | JWKS          | `kipchak.auth.jwks.php`| Validates a Bearer JWT against a remote JWKS URI. Disabled by default.      |
 | Subashi (WAF) | `kipchak.subashi.php`  | Request firewall with OWASP rules, rate limiting, IP/header allow/blocklists. Enabled by default. |
+| Response Cache | `kipchak.response-cache.php` | HTTP cache (RFC 9111) with ETags and invalidation on writes. Caches only the routes it is attached to by default. |
+| Feature Flags | `kipchak.feature-flags.middleware.php` | Gates routes on feature flags, with each API key's client as the flag's user. |
 
 Authentication middlewares are disabled by default (`'enabled' => false`) so the demo routes are accessible without credentials. Set `'enabled' => true` in the relevant config file to activate.
 
@@ -159,6 +163,8 @@ The starter also includes a demo of per-route middleware usage:
 |----------------------|------------------------|
 | `GET /v1/authKey`    | API Key authentication |
 | `GET /v1/authJWKS`  | JWKS authentication    |
+| `GET /v1/cached`     | Response Cache, for 60 seconds: repeat the request and `X-Cache` says `HIT` |
+| `GET /v1/beta`       | API Key authentication, then a feature flag gate on `early-access`: `?apikey=key1` and `key2` get 200, `key3` gets 404 |
 
 Custom per-project middlewares can be added to `api/Middlewares/` and registered in `middlewares/middlewares.php` or applied directly in a route file.
 
@@ -180,18 +186,22 @@ env('ENV_VAR_NAME', 'default-value')
 | `kipchak.auth.key.php`        | API key authentication settings                           |
 | `kipchak.auth.jwks.php`       | JWKS URI and scope validation settings                    |
 | `kipchak.anthropic.php`       | Anthropic API key and default model                       |
+| `kipchak.clickhouse.php`      | ClickHouse host(s), database, credentials and settings    |
 | `kipchak.cloudflare-dns.php`  | Cloudflare API token(s)                                   |
 | `kipchak.cloudns.php`         | ClouDNS credentials                                       |
 | `kipchak.couchdb.php`         | CouchDB host, port, credentials, and database             |
 | `kipchak.doctrine.php`        | Doctrine DBAL connections and ORM entity manager settings |
 | `kipchak.feature-flags.php`   | Feature flag connections (Unleash, Flagsmith, GrowthBook) |
+| `kipchak.feature-flags.middleware.php` | Feature flag gates, and who each request is from     |
 | `kipchak.git.php`             | Git clone directory and named repository definitions      |
 | `kipchak.memcached.php`       | Memcached server pools and options                        |
 | `kipchak.openai.php`          | OpenAI API key, organisation, project, and default model  |
 | `kipchak.rabbitmq.php`        | RabbitMQ connection and queue definitions                 |
+| `kipchak.response-cache.php`  | Response cache store, TTLs and invalidation               |
 | `kipchak.s3.php`              | S3-compatible endpoint(s), credentials, and region        |
 | `kipchak.sftp.php`            | SFTP server(s), credentials, and host key fingerprints    |
 | `kipchak.subashi.php`         | WAF rules: whitelist, blacklist, and rate limit rules     |
+| `kipchak.vector.php`          | Vector store connection(s) and embedding model            |
 
 ---
 
