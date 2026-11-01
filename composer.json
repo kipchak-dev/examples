@@ -19,6 +19,7 @@
         "kipchak/driver-http": "^2",
         "kipchak/driver-logger": "^1",
         "kipchak/driver-memcached": "^1",
+        "kipchak/driver-nats": "^1.0",
         "kipchak/driver-openai": "^2",
         "kipchak/driver-rabbitmq": "^1",
         "kipchak/driver-s3": "^1",

@@ -125,6 +125,7 @@ The starter includes and demonstrates the following drivers:
 | Feature Flags | `kipchak.feature-flags.php` | `GET /v1/flags`          | Feature flags from Unleash, Flagsmith or GrowthBook |
 | ClickHouse   | `kipchak.clickhouse.php` | `GET /v1/clickhouse`         | Analytics queries and batched inserts (ClickHouse in `docker-compose.yml`) |
 | Vector       | `kipchak.vector.php`     | `GET /v1/vector`             | Similarity search over Qdrant, pgvector or OpenSearch (Qdrant in `docker-compose.yml`) |
+| NATS         | `kipchak.nats.php`       | `GET /v1/nats`               | Messaging, JetStream streams and key-value buckets (NATS in `docker-compose.yml`) |
 
 ### AI
 
@@ -182,7 +183,7 @@ env('ENV_VAR_NAME', 'default-value')
 
 | File                          | Purpose                                                   |
 |-------------------------------|-----------------------------------------------------------|
-| `kipchak.api.php`             | App name, debug mode, log level                           |
+| `kipchak.api.php`             | App name, debug mode, log level, exception logging        |
 | `kipchak.auth.key.php`        | API key authentication settings                           |
 | `kipchak.auth.jwks.php`       | JWKS URI and scope validation settings                    |
 | `kipchak.anthropic.php`       | Anthropic API key and default model                       |
@@ -195,6 +196,7 @@ env('ENV_VAR_NAME', 'default-value')
 | `kipchak.feature-flags.middleware.php` | Feature flag gates, and who each request is from     |
 | `kipchak.git.php`             | Git clone directory and named repository definitions      |
 | `kipchak.memcached.php`       | Memcached server pools and options                        |
+| `kipchak.nats.php`            | NATS servers, credentials, streams and key-value buckets  |
 | `kipchak.openai.php`          | OpenAI API key, organisation, project, and default model  |
 | `kipchak.rabbitmq.php`        | RabbitMQ connection and queue definitions                 |
 | `kipchak.response-cache.php`  | Response cache store, TTLs and invalidation               |
