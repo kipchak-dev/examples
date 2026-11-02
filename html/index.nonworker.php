@@ -14,3 +14,11 @@ $app = Api::boot();
 $app->addBodyParsingMiddleware();
 
 $app->run();
+
+// Send the response before running work registered with $app->onTerminate(), such as exporting telemetry
+if (function_exists('frankenphp_finish_request')) {
+    frankenphp_finish_request();
+} elseif (function_exists('fastcgi_finish_request')) {
+    fastcgi_finish_request();
+}
+$app->terminate();

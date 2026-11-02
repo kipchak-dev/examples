@@ -6,7 +6,7 @@
     "license": "MIT",
     "require": {
         "php": ">=8.4",
-        "kipchak/core": "^3",
+        "kipchak/core": "^3.15",
         "kipchak/driver-anthropic": "^2",
         "kipchak/driver-clickhouse": "^1.1",
         "kipchak/driver-cloudflare-dns": "^1",

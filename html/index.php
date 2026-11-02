@@ -60,8 +60,9 @@ $maxRequests = (int)($_SERVER['MAX_REQUESTS'] ?? 10000);
 for ($nbRequests = 0; !$maxRequests || $nbRequests < $maxRequests; ++$nbRequests) {
     $keepRunning = \frankenphp_handle_request($handler);
 
-    // Do something after sending the HTTP response
-    // $app->terminate();
+    // Work registered with $app->onTerminate(), such as exporting telemetry, runs here, after the response has
+    // been sent
+    $app->terminate();
 
     // Call the garbage collector to reduce the chances of it being triggered in the middle of a page generation
     gc_collect_cycles();
