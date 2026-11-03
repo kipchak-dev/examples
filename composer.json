@@ -1,8 +1,8 @@
 {
-    "name": "kipchak/starter",
-    "description": "Kipchak PHP API Development Kit (ADK) Starter Project",
-    "type": "template",
-    "homepage": "https://mamluk.net",
+    "name": "kipchak/examples",
+    "description": "Working examples of every free Kipchak driver and middleware",
+    "type": "project",
+    "homepage": "https://kipchak.dev",
     "license": "MIT",
     "require": {
         "php": ">=8.4",

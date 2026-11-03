@@ -1,12 +1,13 @@
 <img src=".mamluk/logo.png" width="96" alt="Kipchak" />
 
-# Kipchak Starter
+# Kipchak Examples
 
-This is the starter project for [Kipchak](https://kipchak.dev) — a PHP 8.4+ API Development Kit (ADK) built on top of [Slim Framework v4](https://www.slimframework.com/) and optimised for [FrankenPHP](https://frankenphp.dev/) in worker mode. It runs on PHP 8.4 and 8.5.
+Working examples of the free [Kipchak](https://kipchak.dev) drivers and middleware: one route for each, with its
+configuration, and a Docker Compose service for each one that needs a server.
 
-> Upgrading an existing project? See the [upgrade guide](https://kipchak.dev/docs/upgrades) for the changes in each major version.
-
-The starter demonstrates all bundled drivers and middlewares, lays out an opinionated project structure, and is fully usable as a vanilla Slim application. Nothing in Slim is restricted.
+To start a new API, use the [starter project](https://1x.ax/mamluk/kipchak/starter) instead:
+`composer create-project kipchak/starter my-api`. Copy what you need from here into it; each package's page on
+[kipchak.dev](https://kipchak.dev/ecosystem) explains its installation and configuration.
 
 **For complete documentation, visit <https://kipchak.dev>.**
 
@@ -15,16 +16,16 @@ The starter demonstrates all bundled drivers and middlewares, lays out an opinio
 ## Install
 
 ```bash
-composer create-project kipchak/starter [api-name] -s dev
+git clone https://1x.ax/mamluk/kipchak/examples.git
+cd examples
+composer install
 ```
-
-Replace `[api-name]` with the directory name for your new project.
 
 ---
 
 ## Running with Docker
 
-The starter ships with a `docker-compose.yml` that brings up the full stack:
+This repository ships with a `docker-compose.yml` that brings up the full stack:
 
 ```bash
 docker compose up
@@ -99,7 +100,7 @@ Kipchak has an opinionated view of how API layers should be structured. These de
 
 Drivers are adapters for external services. They are initialised in `drivers/drivers.php` and registered into the DI container. Config, Logger, and HTTP are initialised first as other drivers depend on them.
 
-The starter includes and demonstrates the following drivers:
+It includes and demonstrates the following drivers:
 
 ### Core
 
@@ -158,7 +159,7 @@ Middlewares are registered in `middlewares/middlewares.php` and apply globally t
 
 Authentication middlewares are disabled by default (`'enabled' => false`) so the demo routes are accessible without credentials. Set `'enabled' => true` in the relevant config file to activate.
 
-The starter also includes a demo of per-route middleware usage:
+It also includes a demo of per-route middleware usage:
 
 | Route                | Middleware applied     |
 |----------------------|------------------------|
